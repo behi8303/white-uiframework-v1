@@ -1,0 +1,210 @@
+
+// Classes : -----------------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------------------
+
+.no-corner {
+    .LoadBorderRadius(2px);
+}
+
+.curved {
+    .LoadBorderRadius(5px);
+}
+
+.bent {
+    .LoadBorderRadius(19px);
+}
+
+.sticker-right {
+    .LoadBorderRadius(0;-1;-1;0);
+}
+
+.sticker-left {
+    .LoadBorderRadius(-1;0;0;-1);
+}
+
+/* ------------------------------------------- */
+/* ---------- Class : button ----------------- */
+
+.button
+{
+    .LoadTransition(background-color,box-shadow;linear;.12s,.05s);
+}
+
+.button.pair-icon.circle-icon:after
+{
+    .LoadBorderRadius(100%);
+}
+
+.button.pair-icon.box-icon.no-corner:after {
+    .LoadBorderRadius(2px);
+}
+
+.button.pair-icon.box-icon.curved:after {
+    .LoadBorderRadius(5px);
+}
+
+.button.circle {
+    .LoadBorderRadius(100%);
+}
+
+/* -------------------------------------------- */
+/* ---------- Class : textbox ----------------- */
+
+.textbox, .textarea {
+    .LoadTransition(background-color,border-color;linear;.12s);
+    .LoadBorderBox(border-box);
+}
+
+.textbox.stick-right.no-corner, .textbox.stick-right.curved {
+    .LoadBorderRadius(-1;0;0;-1);
+}
+
+.textbox.stick-left.no-corner, .textbox.stick-left.curved {
+    .LoadBorderRadius(0;-1;-1;0);
+}
+
+/* --------------------------------------------- */
+/* ---------- Class : checkbox ----------------- */
+
+.checkbox > span:before, .radio > span:before {
+    .LoadBorderBox(border-box);
+    .LoadTransition(border-color;linear;.12s);
+}
+
+.checkbox.no-corner > span:before {
+    .LoadBorderRadius(2px);
+}
+
+.checkbox.curved > span:before {
+    .LoadBorderRadius(5px);
+}
+
+.checkbox.colorback > span:before, .radio.colorback > span:before {
+    .LoadTransition(background-color;linear;.12s);
+}
+
+/* ------------------------------------------- */
+/* ---------- Class : switch ----------------- */
+
+.switch > span:before {
+    .LoadBorderBox(border-box);
+    .LoadBorderRadius(12px);
+    .LoadTransition(background-color,box-shadow;linear;.12s,.05s);
+}
+
+.switch > span:after {
+    .LoadBorderRadius(100%);
+    .LoadTransition(background-color,left;linear;.12s);
+}
+
+/* square theme */
+
+.switch.square > span:before {
+    .LoadBorderRadius(0);
+}
+
+.switch.square > span:after {
+    .LoadBorderRadius(0);
+}
+
+/* square no-corner theme */
+
+.switch.square.no-corner > span:before {
+    .LoadBorderRadius(2px);
+}
+
+.switch.square.no-corner > span:after {
+    .LoadBorderRadius(2px);
+}
+
+/* -------------------------------------------- */
+/* ---------- Class : message ----------------- */
+
+.message {
+    .LoadBorderBox(border-box);
+}
+
+.message > .close {
+    .LoadTransition(opacity;linear;.12s);
+}
+
+.message.light {
+    .LoadBoxShadow(0;0;5px;0;rgba(0,0,0,0.08))
+}
+
+/* ----------------------------------------- */
+/* ---------- Class : tabs ----------------- */
+
+.tabsbox > .tabs > .tab {
+    .LoadTransition(background-color,color;linear;.12s);
+}
+
+// Definitions : -------------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------------------
+
+.LoadBorderRadius(@unit)
+{
+    -webkit-border-radius: @unit;
+    -moz-border-radius: @unit;
+    border-radius: @unit;
+}
+
+.LoadBorderRadius(@topleft;@topright;@bottomright;@bottomleft)
+{
+    -webkit-border-top-left-radius: @topleft;
+    -webkit-border-top-right-radius: @topright;
+    -webkit-border-bottom-right-radius: @bottomright;
+    -webkit-border-bottom-left-radius: @bottomleft;
+    -moz-border-top-left-radius: @topleft;
+    -moz-border-top-right-radius: @topright;
+    -moz-border-bottom-right-radius: @bottomright;
+    -moz-border-bottom-left-radius: @bottomleft;
+    border-top-left-radius: @topleft;
+    border-top-right-radius: @topright;
+    border-bottom-right-radius: @bottomright;
+    border-bottom-left-radius: @bottomleft;
+}
+
+.LoadTransition(@property;@tfunction;@duration)
+{
+    -webkit-transition-property: @property;
+    -webkit-transition-timing-function: @tfunction;
+    -webkit-transition-duration: @duration;
+    -moz-transition-property: @property;
+    -moz-transition-timing-function: @tfunction;
+    -moz-transition-duration: @duration;
+    -ms-transition-property: @property;
+    -ms-transition-timing-function: @tfunction;
+    -ms-transition-duration: @duration;
+    -o-transition-property: @property;
+    -o-transition-timing-function: @tfunction;
+    -o-transition-duration: @duration;
+    transition-property: @property;
+    transition-timing-function: @tfunction;
+    transition-duration: @duration;
+}
+
+.LoadBorderBox(@value)
+{
+    -webkit-box-sizing: @value;
+    -moz-box-sizing: @value;
+    box-sizing: @value;
+}
+
+.LoadBoxShadow(@right;@up;@blur;@spread;@color)
+{
+    -webkit-box-shadow: @right @up @blur @spread @color;
+    -moz-box-shadow: @right @up @blur @spread @color;
+    -ms-box-shadow: @right @up @blur @spread @color;
+    -o-box-shadow: @right @up @blur @spread @color;
+    box-shadow: @right @up @blur @spread @color;
+}
+
+.LoadBoxShadowInset(@right;@up;@blur;@spread;@color)
+{
+    -webkit-box-shadow: inset @right @up @blur @spread @color;
+    -moz-box-shadow: inset @right @up @blur @spread @color;
+    -ms-box-shadow: inset @right @up @blur @spread @color;
+    -o-box-shadow: inset @right @up @blur @spread @color;
+    box-shadow: inset @right @up @blur @spread @color;
+}

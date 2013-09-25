@@ -2,42 +2,6 @@ a {
     text-decoration: none;
 }
 
-.no-corner {
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-}
-
-.curved {
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-}
-
-.bent {
-    -webkit-border-radius: 19px;
-    -moz-border-radius: 19px;
-    border-radius: 19px;
-}
-
-.sticker-right {
-    -webkit-border-top-left-radius: 0;
-    -webkit-border-bottom-left-radius: 0;
-    -moz-border-top-left-radius: 0;
-    -moz-border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-}
-
-.sticker-left {
-    -webkit-border-top-right-radius: 0;
-    -webkit-border-bottom-right-radius: 0;
-    -moz-border-top-right-radius: 0;
-    -moz-border-bottom-right-radius: 0;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-}
-
 /* ----------------------------------------------- */
 /* ---------- Class : .button -------------------- */
 
@@ -54,21 +18,6 @@ a {
     vertical-align: middle;
     background-color: #e3e3e1;
     color: #666;
-    -webkit-transition-property: background-color,box-shadow;
-    -webkit-transition-timing-function: linear,linear;
-    -webkit-transition-duration: .12s,.05s;
-    -moz-transition-property: background-color,box-shadow;
-    -moz-transition-timing-function: linear,linear;
-    -moz-transition-duration: .12s,.05s;
-    -ms-transition-property: background-color,box-shadow;
-    -ms-transition-timing-function: linear,linear;
-    -ms-transition-duration: .12s,.05s;
-    -o-transition-property: background-color,box-shadow;
-    -o-transition-timing-function: linear,linear;
-    -o-transition-duration: .12s,.05s;
-    transition-property: background-color,box-shadow;
-    transition-timing-function: linear,linear;
-    transition-duration: .12s,.05s;
 }
 
 .button:hover {
@@ -125,21 +74,6 @@ a {
     right: 3px;
     width: 32px;
     height: 32px;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%;
-}
-
-.button.pair-icon.box-icon.no-corner:after {
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-}
-
-.button.pair-icon.box-icon.curved:after {
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
 }
 
 .button.square {
@@ -150,53 +84,6 @@ a {
 .button.circle {
     padding: 0;
     width: 38px;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%;
-}
-
-
-
-
-
-
-.button.iconic {
-    padding: 0 15px 0 20px;
-}
-
-.button img {
-    margin-bottom: 4px;
-    max-height: 22px;
-    max-width: 26px;
-}
-
-.button.iconic > img {
-    margin-left: 15px;
-}
-
-.button.iconic.square, .button.iconic.circle {
-    padding: 0;
-}
-
-.button.iconic.square > img, .button.iconic.circle > img {
-    margin-left: 0;
-}
-
-.button.pairicon {
-    padding: 0 0 0 20px;
-    overflow: hidden;
-}
-
-.button.pairicon > div.image {
-    display: inline-block;
-    width: 38px;
-    text-align: center;
-    margin-left: 15px;
-    -webkit-transition: background-color linear 0.12s;
-    -moz-transition: background-color linear 0.12s;
-    -ms-transition: background-color linear 0.12s;
-    -o-transition: background-color linear 0.12s;
-    transition: background-color linear 0.12s;
 }
 
 .button.large {
@@ -235,28 +122,10 @@ a {
     width: 230px;
     padding: 0 10px;
     margin: 0 5px 15px 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
     vertical-align: middle;
     border: 1px solid #ccccca;
     background-color: #fafaf8;
     color: #666664;
-    -webkit-transition-property: border-color,background-color,color;
-    -webkit-transition-timing-function: linear;
-    -webkit-transition-duration: .12s;
-    -moz-transition-property: border-color,background-color,color;
-    -moz-transition-timing-function: linear;
-    -moz-transition-duration: .12s;
-    -ms-transition-property: border-color,background-color,color;
-    -ms-transition-timing-function: linear;
-    -ms-transition-duration: .12s;
-    -o-transition-property: border-color,background-color,color;
-    -o-transition-timing-function: linear;
-    -o-transition-duration: .12s;
-    transition-property: border-color,background-color,color;
-    transition-timing-function: linear;
-    transition-duration: .12s;
 }
 
 .textarea {
@@ -304,12 +173,6 @@ a {
     width: 100%;
 }
 
-.textbox.bent {
-    -webkit-border-radius: 19px;
-    -moz-border-radius: 19px;
-    border-radius: 19px;
-}
-
 .textbox.stick-right {
     border-right-width: 0;
     margin-right: -4px;
@@ -318,24 +181,6 @@ a {
 .textbox.stick-left {
     border-left-width: 0;
     margin-left: -4px;
-}
-
-.textbox.stick-right.no-corner, .textbox.stick-right.curved {
-    -webkit-border-top-right-radius: 0;
-    -webkit-border-bottom-right-radius: 0;
-    -moz-border-top-right-radius: 0;
-    -moz-border-bottom-right-radius: 0;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-}
-
-.textbox.stick-left.no-corner, .textbox.stick-left.curved {
-    -webkit-border-top-left-radius: 0;
-    -webkit-border-bottom-left-radius: 0;
-    -moz-border-top-left-radius: 0;
-    -moz-border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
 }
 
 .textbox-container, .textarea-container {
@@ -435,15 +280,7 @@ a {
     position: absolute;
     top: 0;
     left: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
     border: 2px solid #d5d9da;
-    -webkit-transition: border-color linear .12s;
-    -moz-transition: border-color linear .12s;
-    -ms-transition: border-color linear .12s;
-    -o-transition: border-color linear .12s;
-    transition: border-color linear .12s;
 }
 
 .radio > span:before {
@@ -491,18 +328,6 @@ a {
 
 .checkbox.inline, .radio.inline {
     margin-bottom: 0;
-}
-
-.checkbox.no-corner > span:before {
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-}
-
-.checkbox.curved > span:before {
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
 }
 
 /* dark theme */
@@ -642,11 +467,6 @@ a {
 .checkbox.colorback > span:before, .radio.colorback > span:before {
     background-color: #e0e8ea;
     border-width: 0;
-    -webkit-transition: background-color linear .12s;
-    -moz-transition: background-color linear .12s;
-    -ms-transition: background-color linear .12s;
-    -o-transition: background-color linear .12s;
-    transition: background-color linear .12s;
 }
 
 .checkbox.colorback > input[type="checkbox"]:checked ~ span:before {
@@ -708,29 +528,8 @@ a {
     position: absolute;
     top: 0;
     left: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
     border: 2px solid #d5d9da;
     background-color: #fafafa;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    border-radius: 12px;
-    -webkit-transition-property: border-color,background-color;
-    -webkit-transition-timing-function: linear;
-    -webkit-transition-duration: .12s;
-    -moz-transition-property: border-color,background-color;
-    -moz-transition-timing-function: linear;
-    -moz-transition-duration: .12s;
-    -ms-transition-property: border-color,background-color;
-    -ms-transition-timing-function: linear;
-    -ms-transition-duration: .12s;
-    -o-transition-property: border-color,background-color;
-    -o-transition-timing-function: linear;
-    -o-transition-duration: .12s;
-    transition-property: border-color,background-color;
-    transition-timing-function: linear;
-    transition-duration: .12s;
 }
 
 .switch:hover > span:before {
@@ -750,24 +549,6 @@ a {
     content: "";
     top: 4px;
     left: 4px;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%;
-    -webkit-transition-property: background-color,left;
-    -webkit-transition-timing-function: linear;
-    -webkit-transition-duration: .12s;
-    -moz-transition-property: background-color,left;
-    -moz-transition-timing-function: linear;
-    -moz-transition-duration: .12s;
-    -ms-transition-property: background-color,left;
-    -ms-transition-timing-function: linear;
-    -ms-transition-duration: .12s;
-    -o-transition-property: background-color,left;
-    -o-transition-timing-function: linear;
-    -o-transition-duration: .12s;
-    transition-property: background-color,left;
-    transition-timing-function: linear;
-    transition-duration: .12s;
 }
 
 .switch > input[type="checkbox"]:checked ~ span:after {
@@ -794,34 +575,6 @@ a {
 
 .switch.inline {
     margin-bottom: 0;
-}
-
-/* square theme */
-
-.switch.square > span:before {
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0;
-}
-
-.switch.square > span:after {
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0;
-}
-
-/* square no-corner theme */
-
-.switch.square.no-corner > span:before {
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-}
-
-.switch.square.no-corner > span:after {
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
 }
 
 /* colorback theme */
@@ -885,9 +638,6 @@ a {
     background-color: #ecefee;
     padding: 13px 15px;
     margin-bottom: 10px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
 }
 
 .message > .close {
@@ -902,11 +652,6 @@ a {
     background-repeat: no-repeat;
     cursor: pointer;
     opacity: .4;
-    -webkit-transition: opacity linear .12s;
-    -moz-transition: opacity linear .12s;
-    -ms-transition: opacity linear .12s;
-    -o-transition: opacity linear .12s;
-    transition: opacity linear .12s;
 }
 
 .message > .close:hover {
@@ -949,9 +694,6 @@ a {
 .message.light {
     border: 1px solid rgba(189,195,199,.3);
     background-color: rgba(189,195,199,0.1);
-    -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.08);
-    -moz-box-shadow: 0 0 5px 0 rgba(0,0,0,0.08);
-    box-shadow: 0 0 5px 0 rgba(0,0,0,0.08);
 }
 
 /* ----------------------------------------- */
@@ -973,21 +715,6 @@ a {
     overflow: hidden;
     padding: 0 15px;
     cursor: pointer;
-    -webkit-transition-property: color, background-color;
-    -webkit-transition-timing-function: linear;
-    -webkit-transition-duration: .12s;
-    -moz-transition-property: color, background-color;
-    -moz-transition-timing-function: linear;
-    -moz-transition-duration: .12s;
-    -ms-transition-property: color, background-color;
-    -ms-transition-timing-function: linear;
-    -ms-transition-duration: .12s;
-    -o-transition-property: color, background-color;
-    -o-transition-timing-function: linear;
-    -o-transition-duration: .12s;
-    transition-property: color, background-color;
-    transition-timing-function: linear;
-    transition-duration: .12s;
 }
 
 .tabsbox > .tabs > .tab:hover {
@@ -998,9 +725,6 @@ a {
     background-color: #f5f7f6;
     color: #333;
     cursor: default;
-    /*-webkit-border-radius: 5px 5px 0 0;
-    -moz-border-radius: 5px 5px 0 0;
-    border-radius: 5px 5px 0 0;*/
 }
 
 .tabsbox > .bodies {

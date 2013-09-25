@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Fonts Demo</title>
+        <link href="../reset_rtl.css" rel="stylesheet" />
+        <link href="../960_24_col_rtl.css" rel="stylesheet" />
+        <link href="fonts.css" rel="stylesheet" />
+        <style type="text/css">
+            body{
+                background-color: #f5f5f2;
+            }
+            
+            .header{
+                background-color: #ddddda;
+                font: 45px segoeui-light;
+                color: #888886;
+                padding: 20px 0;
+                margin-bottom: 20px;
+            }
+            
+            #menu_con
+            {
+                background-color: #fff;
+                border-radius: 5px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            
+            #menu_con > p
+            {
+                margin: 5px 15px;
+                border-bottom: 1px dashed #ccccca;
+                padding-bottom: 5px;
+                font: 15px segoeui;
+            }
+            
+            .main-con{
+                background-color: #fff;
+                overflow: hidden;
+                border-radius: 5px;
+                margin-bottom: 10px;
+                display: none;
+            }
+            
+            .main-con .font-name{
+                background-color: #999991;
+                color: #fff;
+                font: 25px segoeui-light;
+                padding: 20px;
+                line-height: 30px;            
+            }
+            
+            .main-con .font-face{
+                border-radius: 0 0 5px 5px;   
+            }
+            
+            .main-con .font-face > div
+            {
+                padding: 10px 365px 10px 40px;
+                border-bottom: 1px dashed #ddddda;
+                position: relative;
+                overflow: hidden;
+                height: 60px;
+            }
+            
+            .main-con .font-face > div > p.desc
+            {
+                font: 12px segoeui;
+                text-align: left;
+                padding: 2px 5px;
+                position: absolute;
+                left: 2px;
+                top: 2px;
+                background-color: #eeeeea;
+                line-height: 72px;
+            }
+            
+            .main-con .font-face.fa{
+                direction: rtl;            
+            }
+            
+            .main-con .font-face .en{            
+            }
+            
+            .main-con .font-face .font32{
+                font-size: 32px;
+                line-height: 60px;
+            }
+            
+            .main-con .font-face .font24{
+                font-size: 24px;
+                line-height: 60px;
+            }
+            
+            .main-con .font-face .font18{
+                font-size: 18px;
+                line-height: 31px;
+            }
+            
+            .main-con .font-face .font14{
+                font-size: 14px;
+                line-height: 22px;
+                border-bottom-width: 0;
+            }
+            
+            .main-con .font-face > div > p.entext
+            {
+                direction: ltr;
+                text-align: left;
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                width: 340px;
+            }
+            
+        </style>
+        <script src="../../js/jquery-1.7.1.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                var inValFa = '<div class="font32"><p class="desc">32px</p><p class="entext">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,</p><p>لورم ایپسوم متنی است ساختگی.</p></div>';
+                inValFa += '<div class="font24"><p class="desc">24px</p><p class="entext">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,</p><p>لورم ایپسوم متنی است ساختگی برای طراحی و چاپ.</p></div>';
+                inValFa += '<div class="font18"><p class="desc">18px</p><p class="entext">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,</p><p>لورم ایپسوم متنی است که ساختگی برای طراحی و چاپ آن مورد است. صنعت چاپ زمانی لازم بود شرایطی شما باید فکر ثبت نام و طراحی، لازمه خروج می باشد.</p></div>';
+                inValFa += '<div class="font14"><p class="desc">14px</p><p class="entext">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,</p><p>لورم ایپسوم متنی است که ساختگی برای طراحی و چاپ آن مورد است. صنعت چاپ زمانی لازم بود شرایطی شما باید فکر ثبت نام و طراحی، لازمه خروج می باشد. در ضمن قاعده همفکری ها جوابگوی سئوالات زیاد شاید باشد،</p></div>';
+                $('.font-face.fa').html(inValFa);
+            
+                $('#demo_con > div').each(function () {
+                    var fontName = $(this).attr('id');
+                    var menuItem = '<p><input type="checkbox" value="' + fontName;
+                    menuItem += '" name="' + fontName + '_demo' + '" id="' + fontName + '_demo' + '" />';
+                    menuItem += '<label for="' + fontName + '_demo' + '">' + fontName + '</label></p>';
+                    $('#menu_con').append(menuItem);
+                });
+            
+                $('#menu_con > p > input[type="checkbox"]').change(function () {
+                    var itemRef = $('#' + $(this).val());
+                    if ($(this).is(':checked')) {
+                        itemRef.fadeIn(200);
+                    }
+                    else {
+                        itemRef.fadeOut(200);
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <div class="container_24">
+                <div class="grid_24">
+                Fonts Demo
+                </div>
+            </div>
+        </div>
+        <div class="container_24">
+            <div id="menu_con" class="grid_5"></div>
+            <div id="demo_con" class="grid_19">
+                <div id="Badiya" class="grid_19 alpha omega main-con">
+                    <div class="font-name">
+                    Badiya
+                    </div>
+                    <div class="font-face fa" style="font-family: Badiya">
+                    </div>
+                </div>
+                <div id="BBadr" class="grid_19 alpha omega main-con">
+                    <div class="font-name">
+                    BBadr
+                    </div>
+                    <div class="font-face fa" style="font-family: BBadr">
+                    </div>
+                </div>
+                <div id="BBCNassim" class="grid_19 alpha omega main-con">
+                    <div class="font-name">
+                    BBCNassim
+                    </div>
+                    <div class="font-face fa" style="font-family: BBCNassim">
+                    </div>
+                </div>
+                <div id="BCompset" class="grid_19 alpha omega main-con">
+                    <div class="font-name">
+                    BCompset
+                    </div>
+                    <div class="font-face fa" style="font-family: BCompset">
+                    </div>
+                </div>
+                <div id="BKoodak" class="grid_19 alpha omega main-con">
+                    <div class="font-name">
+                    BKoodak
+                    </div>
+                    <div class="font-face fa" style="font-family: BKoodak">
+                    </div>
+                </div>
+                <div id="BLotus" class="grid_19 alpha omega main-con">
+                    <div class="font-name">
+                    BLotus
+                    </div>
+                    <div class="font-face fa" style="font-family: BLotus">
+                    </div>
+                </div>
+                <div id="BMitra" class="grid_19 alpha omega main-con">
+                    <div class="font-name">
+                    BMitra
+                    </div>
+                    <div class="font-face fa" style="font-family: BMitra">
+                    </div>
+                </div>
+                <div id="BNazanin" class="grid_19 alpha omega main-con">
+                    <div class="font-name">
+                    BNazanin
+                    </div>
+                    <div class="font-face fa" style="font-family: BNazanin">
+                    </div>
+                </div>
+                <div id="BRoya" class="grid_19 alpha omega main-con">
+                    <div class="font-name">
+                    BRoya
+                    </div>
+                    <div class="font-face fa" style="font-family: BRoya">
+                    </div>
+                </div>
+                <div id="CaviarDreams" class="grid_19 alpha omega main-con">
+                    <div class="font-name">
+                    CaviarDreams
+                    </div>
+                    <div class="font-face fa" style="font-family: CaviarDreams">
+                    </div>
+                </div>
+                <div id="DroidNaskh" class="grid_19 alpha omega main-con">
+                    <div class="font-name">
+                    DroidNaskh
+                    </div>
+                    <div class="font-face fa" style="font-family: DroidNaskh">
+                    </div>
+                </div>
+                <div id="Homa" class="grid_19 alpha omega main-con">
+                    <div class="font-name">
+                    Homa
+                    </div>
+                    <div class="font-face fa" style="font-family: Homa">
+                    </div>
+                </div>
+                <div id="Koufiya" class="grid_19 alpha omega main-con">
+                    <div class="font-name">
+                    Koufiya
+                    </div>
+                    <div class="font-face fa" style="font-family: Koufiya">
+                    </div>
+                </div>
+                <div id="Mitra" class="grid_19 alpha omega main-con">
+                    <div class="font-name">
+                    Mitra
+                    </div>
+                    <div class="font-face fa" style="font-family: Mitra">
+                    </div>
+                </div>
+                <div id="Nazli" class="grid_19 alpha omega main-con">
+                    <div class="font-name">
+                    Nazli
+                    </div>
+                    <div class="font-face fa" style="font-family: Nazli">
+                    </div>
+                </div>
+                <div id="PalatinoArabic" class="grid_19 alpha omega main-con">
+                    <div class="font-name">
+                    PalatinoArabic
+                    </div>
+                    <div class="font-face fa" style="font-family: PalatinoArabic">
+                    </div>
+                </div>
+                <div id="PalatinoSans" class="grid_19 alpha omega main-con">
+                    <div class="font-name">
+                    PalatinoSans
+                    </div>
+                    <div class="font-face fa" style="font-family: PalatinoSans">
+                    </div>
+                </div>                
+                <div id="SegoeUi" class="grid_19 alpha omega main-con">
+                    <div class="font-name">
+                    SegoeUi
+                    </div>
+                    <div class="font-face fa" style="font-family: SegoeUi">
+                    </div>
+                </div>
+                <div id="SegoeUi-Light" class="grid_19 alpha omega main-con">
+                    <div class="font-name">
+                    SegoeUi-Light
+                    </div>
+                    <div class="font-face fa" style="font-family: SegoeUi-Light">
+                    </div>
+                </div>
+                <div id="Terafik" class="grid_19 alpha omega main-con">
+                    <div class="font-name">
+                    Terafik
+                    </div>
+                    <div class="font-face fa" style="font-family: Terafik">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -91,6 +91,17 @@
                 $(this).parent('.tabs').parent('.tabsbox').children('.bodies').children('.body10').addClass('active');
             }
         });
+
+        //Tables
+        $('.table-header .extract').click(function () {
+            //$(this).parent('.table-header').next('.table').hide(100);
+            $(this).removeClass('extract').addClass('collapse');
+        });
+        $('.table-header .collapse').click(function () {
+            //$(this).parent('.table-header').next('.table').show(100);
+            $(this).removeClass('collapse').addClass('extract');
+        });
+
     })
 
 })($)

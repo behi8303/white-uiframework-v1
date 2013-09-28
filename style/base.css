@@ -752,6 +752,150 @@ a {
 }
 
 /* ----------------------------------------------- */
+/* ---------- Class : Tables -------------------- */
+
+.table {
+    width: 100%;
+    border: 1px solid #dde2df;
+}
+
+.table td, .table th {
+    border-right: 1px solid #dde2df;
+    border-top: 1px solid #dde2df;
+    padding: 8px;
+}
+
+.table td:last-child, .table th:last-child {
+    border-right-width: 0;
+}
+
+.table tr:first-child th {
+    border-top-width: 0;
+}
+
+.table tr:first-child td {
+    border-top-width: 0;
+}
+
+.table tr:last-child th {
+    border-bottom: 2px solid #dde2df;
+}
+
+.table thead tr th {
+    font-weight: bold;
+    background-color: #f7f9f5;
+}
+
+.table tbody tr.summery td {
+    border-top: 4px double #dde2df;
+    background-color: #f7f9f5;
+}
+
+.table tbody tr:hover td {
+    background-color: rgba(245,245,0,.15);
+}
+
+.table.censored td, .table.censored th {
+    padding: 5px;
+}
+
+.table.striped tbody tr:nth-child(even) td {
+    background-color: #f2f4ef;
+}
+
+.table.striped tbody tr:hover td {
+    background-color: rgba(245,245,0,.15);
+}
+
+.table.no-border {
+    border-width: 0;
+}
+
+.table.no-border {
+    border-width: 0;
+}
+
+.table.no-border thead tr th {
+    background: transparent;
+}
+
+.table.monolith-row td, .table.monolith-row th {
+    border-right-width: 0;
+}
+
+.table.monolith-column td {
+    border-top-width: 0;
+}
+
+/* has-header & has-footer */
+
+.table.has-header {
+    border-top-width: 0;
+}
+
+.table.has-footer {
+    border-bottom-width: 0;
+}
+
+.table-header {
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 0 20px;
+    height: 42px;
+    overflow: hidden;
+}
+
+.table-header .topic {
+    font: 21px segoeui-light;
+    line-height: 42px;
+    background-image: url('images/table-topic-def-w.png');
+    background-position: center left;
+    background-repeat: no-repeat;
+    float: left;
+    padding-left: 32px;
+}
+
+.table-header .extract {
+    float: right;
+    width: 23px;
+    height: 23px;
+    background-image: url('images/arrowthin-up-white.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.table-header .collapse {
+    float: right;
+    width: 23px;
+    height: 23px;
+    background-image: url('images/arrowthin-down-white.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.table-more {
+    height: 20px;
+    background-color: #f7f9f5;
+    border-right: 1px solid #dde2df;
+    border-left: 1px solid #dde2df;
+    background-image: url('images/table-more-def.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.table-footer {
+    background-color: #2ecc71;
+    font-size: 14px;
+    color: #fff;
+    padding: 5px 20px;
+}
+
+/* ----------------------------------------------- */
 /* ---------- Class : form items ----------------- */
 
 .formrow {

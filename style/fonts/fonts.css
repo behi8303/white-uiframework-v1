@@ -305,26 +305,96 @@
   font-style: normal;
 }
 
-
-/*Test*/
-
+/* Icon Font */
 
 @font-face {
-  font-family: 'testy';
-  src: url('Terafik/terafik.woff') format('woff'),              
-       url('Terafik/terafik.ttf') format('truetype'),
-       url('Terafik/terafik.eot?#iefix') format('embedded-opentype'),
-       url('Terafik/terafik.svg#terafik') format('svg');
+  font-family: 'if_Elusive';
+  src: url('if_Elusive/Elusive-Icons.woff') format('woff'),              
+       url('if_Elusive/Elusive-Icons.ttf') format('truetype'),
+       url('if_Elusive/Elusive-Icons.eot?#iefix') format('embedded-opentype'),
+       url('if_Elusive/Elusive-Icons.svg#Elusive') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
+  font-family: 'if_FontAwesome';
+  src: url('if_FontAwesome/fontawesome-webfont.woff') format('woff'),              
+       url('if_FontAwesome/fontawesome-webfont.ttf') format('truetype'),
+       url('if_FontAwesome/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+       url('if_FontAwesome/fontawesome-webfont.svg#FontAwesome') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'if_Glyphs';
+  src: url('if_Glyphs/Flat-UI-Icons.woff') format('woff'),              
+       url('if_Glyphs/Flat-UI-Icons.ttf') format('truetype'),
+       url('if_Glyphs/Flat-UI-Icons.eot?#iefix') format('embedded-opentype'),
+       url('if_Glyphs/Flat-UI-Icons.svg#Glyphs') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'if_Metroui';
+  src: url('if_Metroui/iconFont.woff') format('woff'),              
+       url('if_Metroui/iconFont.ttf') format('truetype'),
+       url('if_Metroui/iconFont.eot?#iefix') format('embedded-opentype'),
+       url('if_Metroui/iconFont.svg#Metroui') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'if_LigatureSymbols';
+  src: url('if_LigatureSymbols/LigatureSymbols-2.11.woff') format('woff'),              
+       url('if_LigatureSymbols/LigatureSymbols-2.11.ttf') format('truetype'),
+       url('if_LigatureSymbols/LigatureSymbols-2.11.eot?#iefix') format('embedded-opentype'),
+       url('if_LigatureSymbols/LigatureSymbols-2.11.svg#LigatureSymbols') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SevenWhite';
+  src: url('if_seven-white/fonts/seven-white.woff') format('woff'),              
+       url('if_seven-white/fonts/seven-white.ttf') format('truetype'),
+       url('if_seven-white/fonts/seven-white.eot?#iefix') format('embedded-opentype'),
+       url('if_seven-white/fonts/seven-white.svg#lightwhite') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MinimalistWhite';
+  src: url('if_minimalist-white/fonts/minimalist-white.woff') format('woff'),              
+       url('if_minimalist-white/fonts/minimalist-white.ttf') format('truetype'),
+       url('if_minimalist-white/fonts/minimalist-white.eot?#iefix') format('embedded-opentype'),
+       url('if_minimalist-white/fonts/minimalist-white.svg#lightwhite') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MasterWhite';
+  src: url('if_master-white/fonts/master-white.woff') format('woff'),              
+       url('if_master-white/fonts/master-white.ttf') format('truetype'),
+       url('if_master-white/fonts/master-white.eot?#iefix') format('embedded-opentype'),
+       url('if_master-white/fonts/master-white.svg#lightwhite') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*Test*/
+
+@font-face {
   font-family: 'testy';
-  src: url('Terafik/terafikb.woff') format('woff'),              
-       url('Terafik/terafikb.ttf') format('truetype'),
-       url('Terafik/terafikb.eot?#iefix') format('embedded-opentype'),
-       url('Terafik/terafikb.svg#terafikb') format('svg');
-  font-weight: bold;
+  src: url('_new/icomoon.woff') format('woff'),              
+       url('_new/icomoon-clock.ttf') format('truetype'),
+       url('_new/icomoon.eot?#iefix') format('embedded-opentype'),
+       url('_new/icomoon.svg#iconmoon') format('svg');
+  font-weight: normal;
   font-style: normal;
 }

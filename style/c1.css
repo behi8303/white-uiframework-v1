@@ -2,140 +2,286 @@
 /* ------------------------------------------- */
 /* ---------- G : .button -------------------- */
 
-.button.success, .pair-icon.icon-success:after {
+.button.success, .button.pair-icon > .icon.success {
     background-color: #2ecc71;
     color: #fff;
 }
 
-.button.success:hover, .pair-icon:hover.icon-success:after {
+.button.success:hover, .button.pair-icon.success > .icon {
     background-color: #29b362;
 }
 
-.button.alert, .pair-icon.icon-alert:after {
+.button.alert, .button.pair-icon > .icon.alert {
     background-color: #f3be00;
     color: #fff;
 }
 
-.button.alert:hover, .pair-icon:hover.icon-alert:after {
+.button.alert:hover, .button.pair-icon.alert > .icon {
     background-color: #e5b400;
 }
 
-.button.error, .pair-icon.icon-error:after {
+.button.error, .button.pair-icon > .icon.error {
     background-color: #e74c3c;
     color: #fff;
 }
 
-.button.error:hover, .pair-icon:hover.icon-error:after {
+.button.error:hover, .button.pair-icon.error > .icon {
     background-color: #cf4536;
 }
 
-.button.info, .pair-icon.icon-info:after {
+.button.info, .button.pair-icon > .icon.info {
     background-color: #1abc9c;
     color: #fff;
 }
 
-.button.info:hover, .pair-icon:hover.icon-info:after {
+.button.info:hover, .button.pair-icon.info > .icon {
     background-color: #17a387;
 }
 
-.button.submit, .pair-icon.icon-submit:after {
+.button.submit, .button.pair-icon > .icon.submit {
     background-color: #2572eb;
     color: #fff;
 }
 
-.button.submit:hover, .pair-icon:hover.icon-submit:after {
+.button.submit:hover, .button.pair-icon.submit > .icon {
     background-color: #2165d1;
 }
 
-.button.night, .pair-icon.icon-night:after {
+.button.night, .button.pair-icon > .icon.night {
     background-color: #34495e;
     color: #fff;
 }
 
-.button.night:hover, .pair-icon:hover.icon-night:after {
+.button.night:hover, .button.pair-icon.night > .icon {
     background-color: #1d2a36;
 }
 
-.button.sky, .pair-icon.icon-sky:after {
+.button.sky, .button.pair-icon > .icon.sky {
     background-color: #00bff3;
     color: #fff;
 }
 
-.button.sky:hover, .pair-icon:hover.icon-sky:after {
+.button.sky:hover, .button.pair-icon.sky > .icon {
     background-color: #00aad9;
 }
 
-.button.spirit, .pair-icon.icon-spirit:after {
+.button.spirit, .button.pair-icon > .icon.spirit {
     background-color: #00d8cc;
     color: #fff;
 }
 
-.button.spirit:hover, .pair-icon:hover.icon-spirit:after {
+.button.spirit:hover, .button.pair-icon.spirit > .icon {
     background-color: #00bfb6;
 }
 
-.button.flower, .pair-icon.icon-flower:after {
+.button.flower, .button.pair-icon > .icon.flower {
     background-color: #ff76bc;
     color: #fff;
 }
 
-.button.flower:hover, .pair-icon:hover.icon-flower:after {
+.button.flower:hover, .button.pair-icon.flower > .icon {
     background-color: #e56aaa;
 }
 
-.button.sea, .pair-icon.icon-sea:after {
+.button.sea, .button.pair-icon > .icon.sea {
     background-color: #3498db;
     color: #fff;
 }
 
-.button.sea:hover, .pair-icon:hover.icon-sea:after {
+.button.sea:hover, .button.pair-icon.sea > .icon {
     background-color: #2b7eb5;
 }
 
-.button.toxic, .pair-icon.icon-toxic:after {
+.button.toxic, .button.pair-icon > .icon.toxic {
     background-color: #8dc63f;
     color: #fff;
 }
 
-.button.toxic:hover, .pair-icon:hover.icon-toxic:after {
+.button.toxic:hover, .button.pair-icon.toxic > .icon {
     background-color: #7aad37;
 }
 
-.button.sunset, .pair-icon.icon-sunset:after {
+.button.sunset, .button.pair-icon > .icon.sunset {
     background-color: #f39c12;
     color: #fff;
 }
 
-.button.sunset:hover, .pair-icon:hover.icon-sunset:after {
+.button.sunset:hover, .button.pair-icon.sunset > .icon {
     background-color: #d98b0f;
 }
 
-.button.cloud, .pair-icon.icon-cloud:after {
+.button.cloud, .button.pair-icon > .icon.cloud {
     background-color: #e8eff1;
     color: #333;
 }
 
-.button.cloud:hover, .pair-icon:hover.icon-cloud:after {
+.button.cloud:hover, .button.pair-icon.cloud > .icon {
     background-color: #d0d7d9;
 }
 
-.button.purple, .pair-icon.icon-purple:after {
+.button.purple, .button.pair-icon > .icon.purple {
     background-color: #9d60b6;
     color: #fff;
 }
 
-.button.purple:hover, .pair-icon:hover.icon-purple:after {
+.button.purple:hover, .button.pair-icon.purple > .icon {
     background-color: #854c9c;
 }
 
-.button.silver, .pair-icon.icon-silver:after {
+.button.silver, .button.pair-icon > .icon.silver {
     background-color: #bdc3c7;
     color: #fff;
 }
 
-.button.silver:hover, .pair-icon:hover.icon-silver:after {
+.button.silver:hover, .button.pair-icon.silver > .icon {
     background-color: #a5aaad;
 }
+
+/* border buttons */
+
+.button.bordered.success, .button.bordered.sea, .button.bordered.alert, .button.bordered.error, .button.bordered.submit, 
+.button.bordered.info, .button.bordered.night, .button.bordered.sky, .button.bordered.flower, .button.bordered.spirit, 
+.button.bordered.sea, .button.bordered.toxic, .button.bordered.sunset, .button.bordered.cloud, .button.bordered.purple, 
+.button.bordered.silver {
+    background-color: transparent;
+    color: #666;
+}
+
+.button.bordered.success:hover, .button.bordered.sea:hover, .button.bordered.alert:hover, .button.bordered.error:hover, .button.bordered.submit:hover, 
+.button.bordered.info:hover, .button.bordered.night:hover, .button.bordered.sky:hover, .button.bordered.flower:hover, .button.bordered.spirit:hover, 
+.button.bordered.sea:hover, .button.bordered.toxic:hover, .button.bordered.sunset:hover, .button.bordered.cloud:hover, .button.bordered.purple:hover, 
+.button.bordered.silver:hover {
+    background-color: #f3f7f5;
+}
+
+.button.bordered.success:active, .button.bordered.sea:active, .button.bordered.alert:active, .button.bordered.error:active, .button.bordered.submit:active, 
+.button.bordered.info:active, .button.bordered.night:active, .button.bordered.sky:active, .button.bordered.flower:active, .button.bordered.spirit:active, 
+.button.bordered.sea:active, .button.bordered.toxic:active, .button.bordered.sunset:active, .button.bordered.cloud:active, .button.bordered.purple:active, 
+.button.bordered.silver:active {
+    background-color: #e3e3e1;
+    box-shadow: none;
+}
+
+.button.bordered.success:hover {
+    border-color: #2ecc71;
+}
+
+.button.bordered.success > .icon {
+    color: #2ecc71;
+}
+
+.button.bordered.sea:hover {
+    border-color: #3498db;
+}
+
+.button.bordered.sea > .icon {
+    color: #3498db;
+}
+
+.button.bordered.alert:hover {
+    border-color: #f3be00;
+}
+
+.button.bordered.alert > .icon {
+    color: #f3be00;
+}
+
+.button.bordered.error:hover {
+    border-color: #e74c3c;
+}
+
+.button.bordered.error > .icon {
+    color: #e74c3c;
+}
+
+.button.bordered.submit:hover {
+    border-color: #2572eb;
+}
+
+.button.bordered.submit > .icon {
+    color: #2572eb;
+}
+
+.button.bordered.info:hover {
+    border-color: #1abc9c;
+}
+
+.button.bordered.info > .icon {
+    color: #1abc9c;
+}
+
+.button.bordered.night:hover {
+    border-color: #34495e;
+}
+
+.button.bordered.night > .icon {
+    color: #34495e;
+}
+
+.button.bordered.sky:hover {
+    border-color: #00bff3;
+}
+
+.button.bordered.sky > .icon {
+    color: #00bff3;
+}
+
+.button.bordered.flower:hover {
+    border-color: #ff76bc;
+}
+
+.button.bordered.flower > .icon {
+    color: #ff76bc;
+}
+
+.button.bordered.spirit:hover {
+    border-color: #00d8cc;
+}
+
+.button.bordered.spirit > .icon {
+    color: #00d8cc;
+}
+
+.button.bordered.toxic:hover {
+    border-color: #8dc63f;
+}
+
+.button.bordered.toxic > .icon {
+    color: #8dc63f;
+}
+
+.button.bordered.sunset:hover {
+    border-color: #f39c12;
+}
+
+.button.bordered.sunset > .icon {
+    color: #f39c12;
+}
+
+.button.bordered.cloud:hover {
+    border-color: #e8eff1;
+}
+
+.button.bordered.cloud > .icon {
+    color: #e8eff1;
+}
+
+.button.bordered.purple:hover {
+    border-color: #9d60b6;
+}
+
+.button.bordered.purple > .icon {
+    color: #9d60b6;
+}
+
+.button.bordered.silver:hover {
+    border-color: #bdc3c7;
+}
+
+.button.bordered.silver > .icon {
+    color: #bdc3c7;
+}
+
 
 /* icons in buttons */
 

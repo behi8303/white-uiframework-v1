@@ -31,12 +31,19 @@
         });
         $('.show-password').mousedown(function () {
             $(this).prev('.textbox').get(0).type = 'text';
+            $(this).prev('.textbox').addClass('alert');
         });
         $('.show-password').mouseup(function () {
             $(this).prev('.textbox').get(0).type = 'password';
+            $(this).prev('.textbox').removeClass('alert');
         });
         $('.clear-textbox').click(function () {
-            $(this).prev('.textbox').val('');
+            var textb = $(this).prev('.textbox');
+            textb.addClass('error');
+            textb.val('');
+            setTimeout(function () {
+                textb.removeClass('error');
+            }, 120);
         });
         $('.textbox-head.text').each(function () {
             $(this).next('.textbox.has-head').css('padding-left', $(this).width() + 20 + 'px');
@@ -94,12 +101,42 @@
 
         //Tables
         $('.table-header .extract').click(function () {
-            //$(this).parent('.table-header').next('.table').hide(100);
-            $(this).removeClass('extract').addClass('collapse');
+            if ($(this).hasClass('collapsed')) {
+                $(this).removeClass('collapsed');
+                $(this).parent('.table-header').next('.table').fadeIn(250).next('.table-more').fadeOut(1);
+            }
+            else {
+                $(this).addClass('collapsed');
+                var thisTable = $(this).parent('.table-header').next('.table');
+                thisTable.fadeOut(250);
+                setTimeout(function () { thisTable.next('.table-more').fadeIn(1); }, 250)
+            }
+
         });
-        $('.table-header .collapse').click(function () {
-            //$(this).parent('.table-header').next('.table').show(100);
-            $(this).removeClass('collapse').addClass('extract');
+
+        $('.table-more').click(function () {
+            $(this).hide().prev('.table').fadeIn(250).prev('.table-header').children('.extract').removeClass('collapsed');
+        });
+
+        $('.table-container > .topic > .extract').click(function () {
+            if ($(this).hasClass('collapsed')) {
+                $(this).removeClass('collapsed');
+                $(this).parent('.topic').next('.head').fadeIn(250).next('.table-box').fadeIn(250).next('.more').next('.tail').fadeIn(250);
+                $(this).parent('.topic').parent('.table-container').children('.more').fadeOut(1);
+            }
+            else {
+                $(this).addClass('collapsed');
+                $(this).parent('.topic').next('.head').fadeOut(250).next('.table-box').fadeOut(250).next('.more').next('.tail').fadeOut(250);
+                var thisTable = $(this).parent('.topic').parent('.table-container');
+                setTimeout(function () { thisTable.children('.more').fadeIn(1); }, 250)
+            }
+        });
+
+        $('.table-container .more').click(function () {
+            var thisTable = $(this).parent('.table-container');
+            thisTable.children('.topic').children('.extract').removeClass('collapsed');
+            thisTable.children('.head').fadeIn(250).next('.table-box').fadeIn(250).next('.more').next('.tail').fadeIn(250);
+            $(this).fadeOut(1);
         });
 
     })

@@ -27,23 +27,15 @@
 
 .button
 {
-    .LoadTransition(background-color,box-shadow;linear;.12s,.05s);
-}
-
-.button.pair-icon.circle-icon:after
-{
-    .LoadBorderRadius(100%);
-}
-
-.button.pair-icon.box-icon.no-corner:after {
-    .LoadBorderRadius(2px);
-}
-
-.button.pair-icon.box-icon.curved:after {
-    .LoadBorderRadius(5px);
+    .LoadTransition(background-color,box-shadow,border-color;linear;.12s,.05s,.12s);
+    .LoadBorderBox(border-box);
 }
 
 .button.circle {
+    .LoadBorderRadius(100%);
+}
+
+.button.pair-icon.circle-icon > .icon {
     .LoadBorderRadius(100%);
 }
 
@@ -61,6 +53,11 @@
 
 .textbox.stick-left.no-corner, .textbox.stick-left.curved {
     .LoadBorderRadius(0;-1;-1;0);
+}
+
+.textbox-container .textbox-tail.clear-textbox
+{
+    .LoadTransition(color;ease-in-out;.12s);
 }
 
 /* --------------------------------------------- */

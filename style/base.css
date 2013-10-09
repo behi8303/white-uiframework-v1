@@ -9,8 +9,8 @@ a {
     border: none;
     font: 15px segoeui;
     text-align: center;
-    line-height: 38px;
-    height: 38px;
+    line-height: 40px;
+    height: 40px;
     display: inline-block;
     padding: 0 30px;
     cursor: pointer;
@@ -18,6 +18,7 @@ a {
     vertical-align: middle;
     background-color: #e3e3e1;
     color: #666;
+    overflow: hidden;
 }
 
 .button:hover {
@@ -28,73 +29,94 @@ a {
     box-shadow: inset 0 -2px 0px 2px rgba(0,0,0,.12);
 }
 
+.button > .text {
+    line-height: 40px;
+}
+
+.button > .icon {
+    font: 22px sevenwhite;
+    line-height: 40px;
+}
+
 .button.simple-icon {
-    background-repeat: no-repeat;
-    background-position: right center;
-    padding: 0 48px 0 20px;
+    padding: 0 15px 0 20px;
+}
+
+.button.simple-icon > .text {
+    float: left;
+}
+
+.button.simple-icon > .icon {
+    float: right;
+    margin-left: 20px;
 }
 
 .button.center-icon {
-    background-repeat: no-repeat;
-    background-position: center center;
     padding: 0;
     width: 80px;
 }
 
 .button.pair-icon {
     position: relative;
-    padding: 0 63px 0 25px;
+    padding: 0 0 0 20px;
     overflow: hidden;
 }
 
-.button.pair-icon:after {
-    width: 38px;
-    height: 38px;
-    content: "";
-    display: block;
-    position: absolute;
-    text-align: center;
-    top: 0;
-    right: 0;
-    background-color: rgba(0,0,0,.17);
-    background-position: center center;
-    background-repeat: no-repeat;
-    text-align: center;
+.button.pair-icon > .text {
+    float: left;
 }
 
-.button.pair-icon.box-icon:after {
-    top: 3px;
-    right: 3px;
-    width: 32px;
-    height: 32px;
+.button.pair-icon > .icon {
+    float: right;
+    margin-left: 20px;
+    width: 40px;
 }
 
-.button.pair-icon.circle-icon:after {
-    top: 3px;
-    right: 3px;
-    width: 32px;
+.button.pair-icon.box-icon > .icon {
+    height: 30px;
+    line-height: 30px;
+    width: 30px;
+    margin: 5px 5px 5px 25px;
+}
+
+.button.pair-icon.circle-icon > .icon {
     height: 32px;
+    line-height: 32px;
+    width: 32px;
+    margin: 4px 4px 4px 24px;
 }
 
 .button.square {
     padding: 0;
-    width: 38px;
+    width: 40px;
 }
 
 .button.circle {
     padding: 0;
-    width: 38px;
+    width: 40px;
 }
 
 .button.large {
-    font-size: 17px;
-    line-height: 50px;
-    height: 50px;
+    font-size: 18px;
+    line-height: 52px;
+    height: 52px;
     padding: 0 40px;
 }
 
+.button.large > .icon {
+    font-size: 26px;
+    height: 52px;
+    line-height: 52px;
+    margin-left: 30px;
+}
+
+.button.large > .text {
+    height: 52px;
+    line-height: 52px;
+}
+
 .button.simple-icon.large {
-    padding: 0 58px 0 30px;
+    padding: 0 20px 0 30px;
 }
 
 .button.small {
@@ -104,8 +126,20 @@ a {
     padding: 0 18px;
 }
 
+.button.small > .icon {
+    font-size: 18px;
+    height: 28px;
+    line-height: 28px;
+    margin-left: 8px;
+}
+
+.button.small > .text {
+    height: 28px;
+    line-height: 28px;
+}
+
 .button.simple-icon.small {
-    padding: 0 38px 0 5px;
+    padding: 0 5px 0 10px;
 }
 
 .button.block {
@@ -113,12 +147,53 @@ a {
     margin-bottom: 5px;
 }
 
+.button.bordered {
+    border: 1px solid #ccccca;
+    background-color: transparent;
+}
+
+.button.bordered:hover {
+    border: 1px solid #888886;
+    background-color: #f3f7f5;
+}
+
+.button.bordered:active {
+    background-color: #e3e3e1;
+    box-shadow: none;
+}
+
+.button.bordered > .icon {
+    line-height: 38px;
+}
+
+.button.bordered > .text {
+    line-height: 38px;
+}
+
+.button.bordered.large {
+}
+
+.button.bordered.large > .icon, .button.bordered.large > .text {
+    line-height: 50px;
+    height: 50px;
+}
+
+.button.bordered.large.square, .button.bordered.large.circle {
+    padding: 0;
+    width: 52px;
+}
+
+.button.bordered.large.square > .icon, .button.bordered.large.circle > .icon {
+    margin-left: 0;
+    line-height: 50px;
+}
+
 /* --------------------------------------------- */
 /* ---------- Class : .textbox ----------------- */
 
 .textbox, .textarea {
     font: 16px segoeui;
-    height: 38px;
+    height: 40px;
     width: 230px;
     padding: 0 10px;
     margin: 0 5px 15px 0;
@@ -139,6 +214,7 @@ a {
     border-color: #888886;
     background-color: #fff;
     color: #333331;
+    outline: none;
 }
 
 .textbox.inline, .textarea.inline {
@@ -199,11 +275,11 @@ a {
 }
 
 .textbox-container .textbox.has-head, .textarea-container .textarea.has-head {
-    padding-left: 40px;
+    padding-left: 42px;
 }
 
 .textbox-container .textbox.has-tail {
-    padding-right: 40px;
+    padding-right: 42px;
 }
 
 .textbox-container .textbox-head, .textbox-container .textbox-tail, .textarea-container .textarea-head {
@@ -211,19 +287,23 @@ a {
     position: absolute;
     vertical-align: middle;
     text-align: center;
-    line-height: 32px;
-    height: 32px;
-    width: 32px;
+    line-height: 34px;
+    height: 34px;
+    width: 34px;
     top: 3px;
     cursor: pointer;
 }
 
 .textbox-container .textbox-head, .textarea-container .textarea-head {
     left: 3px;
+    font: 22px sevenwhite;
+    line-height: 34px;
 }
 
 .textbox-container .textbox-tail {
     right: 3px;
+    font: 22px sevenwhite;
+    line-height: 34px;
 }
 
 .textbox-container .textbox-head > img, .textbox-container .textbox-tail > img, .textarea-container .textarea-head > img {
@@ -235,8 +315,9 @@ a {
 .textbox-container .textbox-head.text, .textarea-container .textarea-head.text {
     width: auto;
     padding: 0 5px;
-    font-size: 14px;
     text-align: left;
+    font: 14px segoeui;
+    line-height: 34px;
 }
 
 .textbox-container .textbox-tail.text {
@@ -244,6 +325,21 @@ a {
     padding: 0 5px;
     font-size: 14px;
     text-align: right;
+}
+
+.textbox-container .textbox-tail.clear-textbox:hover
+{
+    color: #d35400;
+}
+
+.textbox.error
+{
+    border-color: #d35400;
+}
+
+.textbox.alert
+{
+    border-color: #f1c40f;
 }
 
 /* --------------------------------------------- */
@@ -792,7 +888,7 @@ a {
 }
 
 .table tbody tr:hover td {
-    background-color: rgba(245,245,0,.15);
+    background-color: rgba(245,245,0,.2);
 }
 
 .table.censored td, .table.censored th {
@@ -825,6 +921,34 @@ a {
 
 .table.monolith-column td {
     border-top-width: 0;
+}
+
+.table.jagged {
+    border-width: 0;
+}
+
+.table.jagged thead tr:first-child th {
+    background: transparent;
+}
+
+.table.jagged thead tr:first-child th:first-child {
+    width: 15px;
+    height: 15px;
+    padding: 0;
+}
+
+.table.jagged tbody tr:last-child td {
+    background: transparent;
+}
+
+.table.jagged tbody tr:last-child td:last-child {
+    width: 15px;
+    height: 15px;
+    padding: 0;
+}
+
+.table.jagged th:first-child, .table.jagged td:first-child, .table.jagged th:last-child, .table.jagged td:last-child {
+    background: transparent;
 }
 
 /* has-header & has-footer */
@@ -866,15 +990,8 @@ a {
     cursor: pointer;
 }
 
-.table-header .collapse {
-    float: right;
-    width: 23px;
-    height: 23px;
+.table-header .extract.collapsed {
     background-image: url('images/arrowthin-down-white.png');
-    background-position: center center;
-    background-repeat: no-repeat;
-    margin-top: 10px;
-    cursor: pointer;
 }
 
 .table-more {
@@ -886,6 +1003,7 @@ a {
     background-position: center center;
     background-repeat: no-repeat;
     cursor: pointer;
+    display: none;
 }
 
 .table-footer {
@@ -893,6 +1011,76 @@ a {
     font-size: 14px;
     color: #fff;
     padding: 5px 20px;
+}
+
+.table-footer.light-footer {
+    background-color: #f3f5f4;
+    border: 1px solid #dde2df;
+    color: #333;
+}
+
+/* Table Container */
+
+.table-container {
+    border: 2px solid #dde2df;
+    border-top-width: 0;
+}
+
+.table-container .topic {
+    background-color: #dde2df;
+    color: #333;
+    padding: 0 20px;
+    height: 42px;
+    overflow: hidden;
+}
+
+.table-container .topic .text {
+    font: 21px segoeui-light;
+    line-height: 42px;
+    background-image: url('images/table-topic-def-b.png');
+    background-position: center left;
+    background-repeat: no-repeat;
+    float: left;
+    padding-left: 32px;
+}
+
+.table-container .topic .extract {
+    float: right;
+    width: 23px;
+    height: 23px;
+    background-image: url('images/arrowthin-up-black.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.table-container .topic .extract.collapsed {
+    background-image: url('images/arrowthin-down-black.png');
+}
+
+.table-container .head {
+    margin: 15px 15px 0 15px;
+}
+
+.table-container .table-box {
+    margin: 15px;
+}
+
+.table-container .more {
+    height: 20px;
+    border-right: 1px solid #dde2df;
+    border-left: 1px solid #dde2df;
+    background-image: url('images/table-more-def.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: none;
+}
+
+
+.table-container .tail {
+    margin: 0 15px 15px 15px;
 }
 
 /* ----------------------------------------------- */

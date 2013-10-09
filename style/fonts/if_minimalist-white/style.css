@@ -1,0 +1,805 @@
+@font-face {
+	font-family: 'minimalist-white';
+	src:url('fonts/minimalist-white.eot');
+	src:url('fonts/minimalist-white.eot?#iefix') format('embedded-opentype'),
+		url('fonts/minimalist-white.woff') format('woff'),
+		url('fonts/minimalist-white.ttf') format('truetype'),
+		url('fonts/minimalist-white.svg#minimalist-white') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'minimalist-white';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="minimalist-white-"] {
+*/
+.minimalist-white-zoom_out, .minimalist-white-zoom_in, .minimalist-white-workstation, .minimalist-white-wipes, .minimalist-white-wifi, .minimalist-white-watch, .minimalist-white-wallet, .minimalist-white-volume_up, .minimalist-white-volume_mute, .minimalist-white-volume_down, .minimalist-white-visible, .minimalist-white-view_details, .minimalist-white-user2, .minimalist-white-user1, .minimalist-white-user_talk, .minimalist-white-user_group3, .minimalist-white-user_group2, .minimalist-white-user_group1, .minimalist-white-user_group, .minimalist-white-user_check, .minimalist-white-user_add, .minimalist-white-user, .minimalist-white-upload, .minimalist-white-update_installing, .minimalist-white-update, .minimalist-white-up, .minimalist-white-unpin_circle, .minimalist-white-unpin, .minimalist-white-unlock, .minimalist-white-umbrella, .minimalist-white-trophy, .minimalist-white-trash_full, .minimalist-white-trash, .minimalist-white-toolbox, .minimalist-white-today, .minimalist-white-timer, .minimalist-white-ticket_delete, .minimalist-white-ticket, .minimalist-white-text, .minimalist-white-tag, .minimalist-white-support, .minimalist-white-student, .minimalist-white-stopwatch, .minimalist-white-statistics, .minimalist-white-star_stroke, .minimalist-white-star_half, .minimalist-white-star, .minimalist-white-stack, .minimalist-white-speech_bubble_stroke, .minimalist-white-speech_bubble, .minimalist-white-speaker, .minimalist-white-solution, .minimalist-white-sleepin_mat, .minimalist-white-signal_horn, .minimalist-white-shuffle, .minimalist-white-setting, .minimalist-white-services, .minimalist-white-send_file, .minimalist-white-sell, .minimalist-white-search, .minimalist-white-screenshot, .minimalist-white-saveas, .minimalist-white-save, .minimalist-white-sandglass, .minimalist-white-sale, .minimalist-white-running, .minimalist-white-rotate, .minimalist-white-right_round, .minimalist-white-right, .minimalist-white-reviewer, .minimalist-white-resize, .minimalist-white-repeat, .minimalist-white-reload, .minimalist-white-refresh1, .minimalist-white-refresh, .minimalist-white-recycling, .minimalist-white-radio, .minimalist-white-rack, .minimalist-white-question, .minimalist-white-qr_code, .minimalist-white-puzzle, .minimalist-white-purse, .minimalist-white-purchase_order, .minimalist-white-public_circle, .minimalist-white-public, .minimalist-white-product, .minimalist-white-private_circle, .minimalist-white-private, .minimalist-white-printer, .minimalist-white-plus, .minimalist-white-plugins, .minimalist-white-pin_circle, .minimalist-white-pin, .minimalist-white-pill, .minimalist-white-phone_up, .minimalist-white-phone_down, .minimalist-white-phone, .minimalist-white-pause, .minimalist-white-paper_plan, .minimalist-white-paper, .minimalist-white-package, .minimalist-white-overview4, .minimalist-white-overview3, .minimalist-white-overview2, .minimalist-white-overview1, .minimalist-white-online_support, .minimalist-white-one_free, .minimalist-white-notebook, .minimalist-white-note1, .minimalist-white-note, .minimalist-white-newspaper, .minimalist-white-new, .minimalist-white-negative, .minimalist-white-mouse, .minimalist-white-more, .minimalist-white-monitor, .minimalist-white-moneybox, .minimalist-white-money_bag, .minimalist-white-moderator, .minimalist-white-microphone, .minimalist-white-message_unread_stroke, .minimalist-white-message_unread, .minimalist-white-message_reply, .minimalist-white-message_readed, .minimalist-white-message_forward, .minimalist-white-megafone2, .minimalist-white-megafone1, .minimalist-white-matches, .minimalist-white-manager, .minimalist-white-male, .minimalist-white-magazine, .minimalist-white-logout, .minimalist-white-login, .minimalist-white-lock, .minimalist-white-listen, .minimalist-white-list1, .minimalist-white-list, .minimalist-white-link_broken, .minimalist-white-link, .minimalist-white-like_stroke, .minimalist-white-like_half, .minimalist-white-like, .minimalist-white-left_round, .minimalist-white-left, .minimalist-white-ladder, .minimalist-white-keyboard, .minimalist-white-key1, .minimalist-white-key, .minimalist-white-joystick, .minimalist-white-joker, .minimalist-white-invisible, .minimalist-white-information, .minimalist-white-idea, .minimalist-white-home, .minimalist-white-help, .minimalist-white-headset, .minimalist-white-handshake, .minimalist-white-greentech, .minimalist-white-globe, .minimalist-white-gift, .minimalist-white-gas, .minimalist-white-finish_flag, .minimalist-white-filter_stroke, .minimalist-white-filter, .minimalist-white-female, .minimalist-white-external_link, .minimalist-white-expand, .minimalist-white-error, .minimalist-white-engineering, .minimalist-white-emoticon_wink, .minimalist-white-emoticon_sad, .minimalist-white-emoticon_question, .minimalist-white-emoticon_lol, .minimalist-white-emoticon_happy, .minimalist-white-edit, .minimalist-white-earse, .minimalist-white-download, .minimalist-white-down, .minimalist-white-document, .minimalist-white-dice, .minimalist-white-delivery_free, .minimalist-white-delivery, .minimalist-white-delete_link, .minimalist-white-date_to, .minimalist-white-date_from, .minimalist-white-dashboard, .minimalist-white-cut, .minimalist-white-cross, .minimalist-white-copy_link, .minimalist-white-copy, .minimalist-white-contact, .minimalist-white-comments, .minimalist-white-collapse, .minimalist-white-collaborator, .minimalist-white-coins, .minimalist-white-clover, .minimalist-white-cloud, .minimalist-white-clock, .minimalist-white-clipboard, .minimalist-white-check_book, .minimalist-white-check, .minimalist-white-chart_p_dynamic, .minimalist-white-chart_n_dynamic, .minimalist-white-chart_line, .minimalist-white-chart_combo, .minimalist-white-cash_receiving, .minimalist-white-cart_return, .minimalist-white-cart_filled, .minimalist-white-cart_checkout, .minimalist-white-cart_buy, .minimalist-white-cart, .minimalist-white-card_using, .minimalist-white-card_inserting, .minimalist-white-cabinet, .minimalist-white-business_contact, .minimalist-white-bug, .minimalist-white-briefcase, .minimalist-white-brain, .minimalist-white-box_full, .minimalist-white-box_empty, .minimalist-white-box_close, .minimalist-white-box, .minimalist-white-books, .minimalist-white-bookmark, .minimalist-white-book_stack, .minimalist-white-book, .minimalist-white-biohazard, .minimalist-white-bill, .minimalist-white-bell, .minimalist-white-battery_100, .minimalist-white-battery_90, .minimalist-white-battery_75, .minimalist-white-battery_50, .minimalist-white-battery_25, .minimalist-white-battery_10, .minimalist-white-battery_0, .minimalist-white-basket, .minimalist-white-barcode, .minimalist-white-banknotes, .minimalist-white-bank_cards, .minimalist-white-bandage, .minimalist-white-bag, .minimalist-white-attach, .minimalist-white-assistant, .minimalist-white-archive, .minimalist-white-approval, .minimalist-white-alert, .minimalist-white-alarm_clock, .minimalist-white-administrator, .minimalist-white-add_list, .minimalist-white-add_link, .minimalist-white-add_folder, .minimalist-white-add_file, .minimalist-white-activity_feed, .minimalist-white-about {
+	font-family: 'minimalist-white';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.minimalist-white-zoom_out:before {
+	content: "\e000";
+}
+.minimalist-white-zoom_in:before {
+	content: "\e001";
+}
+.minimalist-white-workstation:before {
+	content: "\e002";
+}
+.minimalist-white-wipes:before {
+	content: "\e003";
+}
+.minimalist-white-wifi:before {
+	content: "\e004";
+}
+.minimalist-white-watch:before {
+	content: "\e005";
+}
+.minimalist-white-wallet:before {
+	content: "\e006";
+}
+.minimalist-white-volume_up:before {
+	content: "\e007";
+}
+.minimalist-white-volume_mute:before {
+	content: "\e008";
+}
+.minimalist-white-volume_down:before {
+	content: "\e009";
+}
+.minimalist-white-visible:before {
+	content: "\e00a";
+}
+.minimalist-white-view_details:before {
+	content: "\e00b";
+}
+.minimalist-white-user2:before {
+	content: "\e00c";
+}
+.minimalist-white-user1:before {
+	content: "\e00d";
+}
+.minimalist-white-user_talk:before {
+	content: "\e00e";
+}
+.minimalist-white-user_group3:before {
+	content: "\e00f";
+}
+.minimalist-white-user_group2:before {
+	content: "\e010";
+}
+.minimalist-white-user_group1:before {
+	content: "\e011";
+}
+.minimalist-white-user_group:before {
+	content: "\e012";
+}
+.minimalist-white-user_check:before {
+	content: "\e013";
+}
+.minimalist-white-user_add:before {
+	content: "\e014";
+}
+.minimalist-white-user:before {
+	content: "\e015";
+}
+.minimalist-white-upload:before {
+	content: "\e016";
+}
+.minimalist-white-update_installing:before {
+	content: "\e017";
+}
+.minimalist-white-update:before {
+	content: "\e018";
+}
+.minimalist-white-up:before {
+	content: "\e019";
+}
+.minimalist-white-unpin_circle:before {
+	content: "\e01a";
+}
+.minimalist-white-unpin:before {
+	content: "\e01b";
+}
+.minimalist-white-unlock:before {
+	content: "\e01c";
+}
+.minimalist-white-umbrella:before {
+	content: "\e01d";
+}
+.minimalist-white-trophy:before {
+	content: "\e01e";
+}
+.minimalist-white-trash_full:before {
+	content: "\e01f";
+}
+.minimalist-white-trash:before {
+	content: "\e020";
+}
+.minimalist-white-toolbox:before {
+	content: "\e021";
+}
+.minimalist-white-today:before {
+	content: "\e022";
+}
+.minimalist-white-timer:before {
+	content: "\e023";
+}
+.minimalist-white-ticket_delete:before {
+	content: "\e024";
+}
+.minimalist-white-ticket:before {
+	content: "\e025";
+}
+.minimalist-white-text:before {
+	content: "\e026";
+}
+.minimalist-white-tag:before {
+	content: "\e027";
+}
+.minimalist-white-support:before {
+	content: "\e028";
+}
+.minimalist-white-student:before {
+	content: "\e029";
+}
+.minimalist-white-stopwatch:before {
+	content: "\e02a";
+}
+.minimalist-white-statistics:before {
+	content: "\e02b";
+}
+.minimalist-white-star_stroke:before {
+	content: "\e02c";
+}
+.minimalist-white-star_half:before {
+	content: "\e02d";
+}
+.minimalist-white-star:before {
+	content: "\e02e";
+}
+.minimalist-white-stack:before {
+	content: "\e02f";
+}
+.minimalist-white-speech_bubble_stroke:before {
+	content: "\e030";
+}
+.minimalist-white-speech_bubble:before {
+	content: "\e031";
+}
+.minimalist-white-speaker:before {
+	content: "\e032";
+}
+.minimalist-white-solution:before {
+	content: "\e033";
+}
+.minimalist-white-sleepin_mat:before {
+	content: "\e034";
+}
+.minimalist-white-signal_horn:before {
+	content: "\e035";
+}
+.minimalist-white-shuffle:before {
+	content: "\e036";
+}
+.minimalist-white-setting:before {
+	content: "\e037";
+}
+.minimalist-white-services:before {
+	content: "\e038";
+}
+.minimalist-white-send_file:before {
+	content: "\e039";
+}
+.minimalist-white-sell:before {
+	content: "\e03a";
+}
+.minimalist-white-search:before {
+	content: "\e03b";
+}
+.minimalist-white-screenshot:before {
+	content: "\e03c";
+}
+.minimalist-white-saveas:before {
+	content: "\e03d";
+}
+.minimalist-white-save:before {
+	content: "\e03e";
+}
+.minimalist-white-sandglass:before {
+	content: "\e03f";
+}
+.minimalist-white-sale:before {
+	content: "\e040";
+}
+.minimalist-white-running:before {
+	content: "\e041";
+}
+.minimalist-white-rotate:before {
+	content: "\e042";
+}
+.minimalist-white-right_round:before {
+	content: "\e043";
+}
+.minimalist-white-right:before {
+	content: "\e044";
+}
+.minimalist-white-reviewer:before {
+	content: "\e045";
+}
+.minimalist-white-resize:before {
+	content: "\e046";
+}
+.minimalist-white-repeat:before {
+	content: "\e047";
+}
+.minimalist-white-reload:before {
+	content: "\e048";
+}
+.minimalist-white-refresh1:before {
+	content: "\e049";
+}
+.minimalist-white-refresh:before {
+	content: "\e04a";
+}
+.minimalist-white-recycling:before {
+	content: "\e04b";
+}
+.minimalist-white-radio:before {
+	content: "\e04c";
+}
+.minimalist-white-rack:before {
+	content: "\e04d";
+}
+.minimalist-white-question:before {
+	content: "\e04e";
+}
+.minimalist-white-qr_code:before {
+	content: "\e04f";
+}
+.minimalist-white-puzzle:before {
+	content: "\e050";
+}
+.minimalist-white-purse:before {
+	content: "\e051";
+}
+.minimalist-white-purchase_order:before {
+	content: "\e052";
+}
+.minimalist-white-public_circle:before {
+	content: "\e053";
+}
+.minimalist-white-public:before {
+	content: "\e054";
+}
+.minimalist-white-product:before {
+	content: "\e055";
+}
+.minimalist-white-private_circle:before {
+	content: "\e056";
+}
+.minimalist-white-private:before {
+	content: "\e057";
+}
+.minimalist-white-printer:before {
+	content: "\e058";
+}
+.minimalist-white-plus:before {
+	content: "\e059";
+}
+.minimalist-white-plugins:before {
+	content: "\e05a";
+}
+.minimalist-white-pin_circle:before {
+	content: "\e05b";
+}
+.minimalist-white-pin:before {
+	content: "\e05c";
+}
+.minimalist-white-pill:before {
+	content: "\e05d";
+}
+.minimalist-white-phone_up:before {
+	content: "\e05e";
+}
+.minimalist-white-phone_down:before {
+	content: "\e05f";
+}
+.minimalist-white-phone:before {
+	content: "\e060";
+}
+.minimalist-white-pause:before {
+	content: "\e061";
+}
+.minimalist-white-paper_plan:before {
+	content: "\e062";
+}
+.minimalist-white-paper:before {
+	content: "\e063";
+}
+.minimalist-white-package:before {
+	content: "\e064";
+}
+.minimalist-white-overview4:before {
+	content: "\e065";
+}
+.minimalist-white-overview3:before {
+	content: "\e066";
+}
+.minimalist-white-overview2:before {
+	content: "\e067";
+}
+.minimalist-white-overview1:before {
+	content: "\e068";
+}
+.minimalist-white-online_support:before {
+	content: "\e069";
+}
+.minimalist-white-one_free:before {
+	content: "\e06a";
+}
+.minimalist-white-notebook:before {
+	content: "\e06b";
+}
+.minimalist-white-note1:before {
+	content: "\e06c";
+}
+.minimalist-white-note:before {
+	content: "\e06d";
+}
+.minimalist-white-newspaper:before {
+	content: "\e06e";
+}
+.minimalist-white-new:before {
+	content: "\e06f";
+}
+.minimalist-white-negative:before {
+	content: "\e070";
+}
+.minimalist-white-mouse:before {
+	content: "\e071";
+}
+.minimalist-white-more:before {
+	content: "\e072";
+}
+.minimalist-white-monitor:before {
+	content: "\e073";
+}
+.minimalist-white-moneybox:before {
+	content: "\e074";
+}
+.minimalist-white-money_bag:before {
+	content: "\e075";
+}
+.minimalist-white-moderator:before {
+	content: "\e076";
+}
+.minimalist-white-microphone:before {
+	content: "\e077";
+}
+.minimalist-white-message_unread_stroke:before {
+	content: "\e078";
+}
+.minimalist-white-message_unread:before {
+	content: "\e079";
+}
+.minimalist-white-message_reply:before {
+	content: "\e07a";
+}
+.minimalist-white-message_readed:before {
+	content: "\e07b";
+}
+.minimalist-white-message_forward:before {
+	content: "\e07c";
+}
+.minimalist-white-megafone2:before {
+	content: "\e07d";
+}
+.minimalist-white-megafone1:before {
+	content: "\e07e";
+}
+.minimalist-white-matches:before {
+	content: "\e07f";
+}
+.minimalist-white-manager:before {
+	content: "\e080";
+}
+.minimalist-white-male:before {
+	content: "\e081";
+}
+.minimalist-white-magazine:before {
+	content: "\e082";
+}
+.minimalist-white-logout:before {
+	content: "\e083";
+}
+.minimalist-white-login:before {
+	content: "\e084";
+}
+.minimalist-white-lock:before {
+	content: "\e085";
+}
+.minimalist-white-listen:before {
+	content: "\e086";
+}
+.minimalist-white-list1:before {
+	content: "\e087";
+}
+.minimalist-white-list:before {
+	content: "\e088";
+}
+.minimalist-white-link_broken:before {
+	content: "\e089";
+}
+.minimalist-white-link:before {
+	content: "\e08a";
+}
+.minimalist-white-like_stroke:before {
+	content: "\e08b";
+}
+.minimalist-white-like_half:before {
+	content: "\e08c";
+}
+.minimalist-white-like:before {
+	content: "\e08d";
+}
+.minimalist-white-left_round:before {
+	content: "\e08e";
+}
+.minimalist-white-left:before {
+	content: "\e08f";
+}
+.minimalist-white-ladder:before {
+	content: "\e090";
+}
+.minimalist-white-keyboard:before {
+	content: "\e091";
+}
+.minimalist-white-key1:before {
+	content: "\e092";
+}
+.minimalist-white-key:before {
+	content: "\e093";
+}
+.minimalist-white-joystick:before {
+	content: "\e094";
+}
+.minimalist-white-joker:before {
+	content: "\e095";
+}
+.minimalist-white-invisible:before {
+	content: "\e096";
+}
+.minimalist-white-information:before {
+	content: "\e097";
+}
+.minimalist-white-idea:before {
+	content: "\e098";
+}
+.minimalist-white-home:before {
+	content: "\e099";
+}
+.minimalist-white-help:before {
+	content: "\e09a";
+}
+.minimalist-white-headset:before {
+	content: "\e09b";
+}
+.minimalist-white-handshake:before {
+	content: "\e09c";
+}
+.minimalist-white-greentech:before {
+	content: "\e09d";
+}
+.minimalist-white-globe:before {
+	content: "\e09e";
+}
+.minimalist-white-gift:before {
+	content: "\e09f";
+}
+.minimalist-white-gas:before {
+	content: "\e0a0";
+}
+.minimalist-white-finish_flag:before {
+	content: "\e0a1";
+}
+.minimalist-white-filter_stroke:before {
+	content: "\e0a2";
+}
+.minimalist-white-filter:before {
+	content: "\e0a3";
+}
+.minimalist-white-female:before {
+	content: "\e0a4";
+}
+.minimalist-white-external_link:before {
+	content: "\e0a5";
+}
+.minimalist-white-expand:before {
+	content: "\e0a6";
+}
+.minimalist-white-error:before {
+	content: "\e0a7";
+}
+.minimalist-white-engineering:before {
+	content: "\e0a8";
+}
+.minimalist-white-emoticon_wink:before {
+	content: "\e0a9";
+}
+.minimalist-white-emoticon_sad:before {
+	content: "\e0aa";
+}
+.minimalist-white-emoticon_question:before {
+	content: "\e0ab";
+}
+.minimalist-white-emoticon_lol:before {
+	content: "\e0ac";
+}
+.minimalist-white-emoticon_happy:before {
+	content: "\e0ad";
+}
+.minimalist-white-edit:before {
+	content: "\e0ae";
+}
+.minimalist-white-earse:before {
+	content: "\e0af";
+}
+.minimalist-white-download:before {
+	content: "\e0b0";
+}
+.minimalist-white-down:before {
+	content: "\e0b1";
+}
+.minimalist-white-document:before {
+	content: "\e0b2";
+}
+.minimalist-white-dice:before {
+	content: "\e0b3";
+}
+.minimalist-white-delivery_free:before {
+	content: "\e0b4";
+}
+.minimalist-white-delivery:before {
+	content: "\e0b5";
+}
+.minimalist-white-delete_link:before {
+	content: "\e0b6";
+}
+.minimalist-white-date_to:before {
+	content: "\e0b7";
+}
+.minimalist-white-date_from:before {
+	content: "\e0b8";
+}
+.minimalist-white-dashboard:before {
+	content: "\e0b9";
+}
+.minimalist-white-cut:before {
+	content: "\e0ba";
+}
+.minimalist-white-cross:before {
+	content: "\e0bb";
+}
+.minimalist-white-copy_link:before {
+	content: "\e0bc";
+}
+.minimalist-white-copy:before {
+	content: "\e0bd";
+}
+.minimalist-white-contact:before {
+	content: "\e0be";
+}
+.minimalist-white-comments:before {
+	content: "\e0bf";
+}
+.minimalist-white-collapse:before {
+	content: "\e0c0";
+}
+.minimalist-white-collaborator:before {
+	content: "\e0c1";
+}
+.minimalist-white-coins:before {
+	content: "\e0c2";
+}
+.minimalist-white-clover:before {
+	content: "\e0c3";
+}
+.minimalist-white-cloud:before {
+	content: "\e0c4";
+}
+.minimalist-white-clock:before {
+	content: "\e0c5";
+}
+.minimalist-white-clipboard:before {
+	content: "\e0c6";
+}
+.minimalist-white-check_book:before {
+	content: "\e0c7";
+}
+.minimalist-white-check:before {
+	content: "\e0c8";
+}
+.minimalist-white-chart_p_dynamic:before {
+	content: "\e0c9";
+}
+.minimalist-white-chart_n_dynamic:before {
+	content: "\e0ca";
+}
+.minimalist-white-chart_line:before {
+	content: "\e0cb";
+}
+.minimalist-white-chart_combo:before {
+	content: "\e0cc";
+}
+.minimalist-white-cash_receiving:before {
+	content: "\e0cd";
+}
+.minimalist-white-cart_return:before {
+	content: "\e0ce";
+}
+.minimalist-white-cart_filled:before {
+	content: "\e0cf";
+}
+.minimalist-white-cart_checkout:before {
+	content: "\e0d0";
+}
+.minimalist-white-cart_buy:before {
+	content: "\e0d1";
+}
+.minimalist-white-cart:before {
+	content: "\e0d2";
+}
+.minimalist-white-card_using:before {
+	content: "\e0d3";
+}
+.minimalist-white-card_inserting:before {
+	content: "\e0d4";
+}
+.minimalist-white-cabinet:before {
+	content: "\e0d5";
+}
+.minimalist-white-business_contact:before {
+	content: "\e0d6";
+}
+.minimalist-white-bug:before {
+	content: "\e0d7";
+}
+.minimalist-white-briefcase:before {
+	content: "\e0d8";
+}
+.minimalist-white-brain:before {
+	content: "\e0d9";
+}
+.minimalist-white-box_full:before {
+	content: "\e0da";
+}
+.minimalist-white-box_empty:before {
+	content: "\e0db";
+}
+.minimalist-white-box_close:before {
+	content: "\e0dc";
+}
+.minimalist-white-box:before {
+	content: "\e0dd";
+}
+.minimalist-white-books:before {
+	content: "\e0de";
+}
+.minimalist-white-bookmark:before {
+	content: "\e0df";
+}
+.minimalist-white-book_stack:before {
+	content: "\e0e0";
+}
+.minimalist-white-book:before {
+	content: "\e0e1";
+}
+.minimalist-white-biohazard:before {
+	content: "\e0e2";
+}
+.minimalist-white-bill:before {
+	content: "\e0e3";
+}
+.minimalist-white-bell:before {
+	content: "\e0e4";
+}
+.minimalist-white-battery_100:before {
+	content: "\e0e5";
+}
+.minimalist-white-battery_90:before {
+	content: "\e0e6";
+}
+.minimalist-white-battery_75:before {
+	content: "\e0e7";
+}
+.minimalist-white-battery_50:before {
+	content: "\e0e8";
+}
+.minimalist-white-battery_25:before {
+	content: "\e0e9";
+}
+.minimalist-white-battery_10:before {
+	content: "\e0ea";
+}
+.minimalist-white-battery_0:before {
+	content: "\e0eb";
+}
+.minimalist-white-basket:before {
+	content: "\e0ec";
+}
+.minimalist-white-barcode:before {
+	content: "\e0ed";
+}
+.minimalist-white-banknotes:before {
+	content: "\e0ee";
+}
+.minimalist-white-bank_cards:before {
+	content: "\e0ef";
+}
+.minimalist-white-bandage:before {
+	content: "\e0f0";
+}
+.minimalist-white-bag:before {
+	content: "\e0f1";
+}
+.minimalist-white-attach:before {
+	content: "\e0f2";
+}
+.minimalist-white-assistant:before {
+	content: "\e0f3";
+}
+.minimalist-white-archive:before {
+	content: "\e0f4";
+}
+.minimalist-white-approval:before {
+	content: "\e0f5";
+}
+.minimalist-white-alert:before {
+	content: "\e0f6";
+}
+.minimalist-white-alarm_clock:before {
+	content: "\e0f7";
+}
+.minimalist-white-administrator:before {
+	content: "\e0f8";
+}
+.minimalist-white-add_list:before {
+	content: "\e0f9";
+}
+.minimalist-white-add_link:before {
+	content: "\e0fa";
+}
+.minimalist-white-add_folder:before {
+	content: "\e0fb";
+}
+.minimalist-white-add_file:before {
+	content: "\e0fc";
+}
+.minimalist-white-activity_feed:before {
+	content: "\e0fd";
+}
+.minimalist-white-about:before {
+	content: "\e0fe";
+}

@@ -1,0 +1,682 @@
+@font-face {
+	font-family: 'seven-white';
+	src:url('fonts/seven-white.eot');
+	src:url('fonts/seven-white.eot?#iefix') format('embedded-opentype'),
+		url('fonts/seven-white.woff') format('woff'),
+		url('fonts/seven-white.ttf') format('truetype'),
+		url('fonts/seven-white.svg#seven-white') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'seven-white';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="seven-white-"] {
+*/
+.seven-white-zoomout, .seven-white-zoomin, .seven-white-workstation, .seven-white-wifi, .seven-white-week_view, .seven-white-web_camera, .seven-white-watch, .seven-white-warning_shield, .seven-white-wallet, .seven-white-volume_mute, .seven-white-volume_medium, .seven-white-volume_low, .seven-white-volume_high, .seven-white-visible, .seven-white-video_cam, .seven-white-user_shield, .seven-white-up-right, .seven-white-upload, .seven-white-up-left, .seven-white-update, .seven-white-up, .seven-white-unlock, .seven-white-umbrella, .seven-white-type, .seven-white-tv, .seven-white-trophy, .seven-white-trash2, .seven-white-trash, .seven-white-top, .seven-white-toolbox, .seven-white-tones, .seven-white-today, .seven-white-timer, .seven-white-switch, .seven-white-student, .seven-white-stopwatch, .seven-white-star_halffill, .seven-white-star_fill, .seven-white-star, .seven-white-stack, .seven-white-square, .seven-white-speedometer, .seven-white-speech_bubble, .seven-white-shield, .seven-white-shared, .seven-white-setting2, .seven-white-setting, .seven-white-send, .seven-white-sell, .seven-white-search, .seven-white-scales_of_Balance, .seven-white-sale, .seven-white-sad, .seven-white-running, .seven-white-rotation_cw, .seven-white-rotation_ccw, .seven-white-right, .seven-white-restriction_shield, .seven-white-resize, .seven-white-repeat, .seven-white-remote_working, .seven-white-reload, .seven-white-refresh_shield, .seven-white-recycling, .seven-white-recycle_sign, .seven-white-rack, .seven-white-question_shield, .seven-white-question, .seven-white-puzzle, .seven-white-printer, .seven-white-price_tag_usd, .seven-white-price_tag, .seven-white-presentation, .seven-white-positive_dynamic, .seven-white-plus, .seven-white-plugins, .seven-white-picture, .seven-white-photo, .seven-white-phone_up, .seven-white-phone_down, .seven-white-paper_clip, .seven-white-paint_bucket, .seven-white-open_in_browser, .seven-white-ok, .seven-white-no_listen, .seven-white-news, .seven-white-negative_dynamic, .seven-white-negative, .seven-white-near_me, .seven-white-musical, .seven-white-music_record, .seven-white-music, .seven-white-movie, .seven-white-more, .seven-white-money_box, .seven-white-money_bag, .seven-white-money, .seven-white-micro, .seven-white-message, .seven-white-megaphone2, .seven-white-megaphone, .seven-white-math, .seven-white-male_symbol, .seven-white-male_stroke, .seven-white-male_border_stroke, .seven-white-male_border, .seven-white-male, .seven-white-lol, .seven-white-lock, .seven-white-literature, .seven-white-listen, .seven-white-link_broken, .seven-white-link, .seven-white-line-chart, .seven-white-like_haltfill, .seven-white-like_fill, .seven-white-like, .seven-white-left, .seven-white-ladder, .seven-white-key, .seven-white-joystick, .seven-white-joker, .seven-white-iphone, .seven-white-ipad, .seven-white-invisible, .seven-white-information, .seven-white-inbox, .seven-white-idea, .seven-white-home, .seven-white-history, .seven-white-help2, .seven-white-help, .seven-white-headset, .seven-white-happy, .seven-white-hand, .seven-white-group, .seven-white-greentech, .seven-white-globe, .seven-white-glass, .seven-white-gift, .seven-white-gas, .seven-white-forward, .seven-white-folder_opened, .seven-white-folder, .seven-white-flash_light, .seven-white-flag, .seven-white-finish_flag, .seven-white-filter, .seven-white-female_symbol, .seven-white-female_stroke, .seven-white-female_border_stroke, .seven-white-female_border, .seven-white-female, .seven-white-fairytale, .seven-white-external_link, .seven-white-expand, .seven-white-engineering, .seven-white-edit, .seven-white-earaser, .seven-white-down-right, .seven-white-download, .seven-white-down-left, .seven-white-down_tri, .seven-white-down, .seven-white-document, .seven-white-directions, .seven-white-dice, .seven-white-design, .seven-white-delivery, .seven-white-delete_shield, .seven-white-day_view, .seven-white-date_to, .seven-white-date_from, .seven-white-cut, .seven-white-cross, .seven-white-credit_card, .seven-white-copy_link, .seven-white-copy, .seven-white-contacts, .seven-white-compas, .seven-white-combo_chart, .seven-white-collapse, .seven-white-code, .seven-white-clover, .seven-white-cloud_upload, .seven-white-cloud_download, .seven-white-clock, .seven-white-cash_receiving, .seven-white-cart_putout, .seven-white-cart_putin, .seven-white-cart_loaded, .seven-white-cart_empty, .seven-white-cart_clear, .seven-white-card_inuse, .seven-white-card_inserting, .seven-white-car_battery, .seven-white-business, .seven-white-bug, .seven-white-briefcase, .seven-white-brain, .seven-white-box_filled, .seven-white-box_empty, .seven-white-box, .seven-white-box-2, .seven-white-bottom, .seven-white-bookmark, .seven-white-bluetooth, .seven-white-basket, .seven-white-banknotes, .seven-white-bag, .seven-white-back, .seven-white-archive, .seven-white-alert, .seven-white-alarm_clock {
+	font-family: 'seven-white';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.seven-white-zoomout:before {
+	content: "\e000";
+}
+.seven-white-zoomin:before {
+	content: "\e001";
+}
+.seven-white-workstation:before {
+	content: "\e002";
+}
+.seven-white-wifi:before {
+	content: "\e003";
+}
+.seven-white-week_view:before {
+	content: "\e004";
+}
+.seven-white-web_camera:before {
+	content: "\e005";
+}
+.seven-white-watch:before {
+	content: "\e006";
+}
+.seven-white-warning_shield:before {
+	content: "\e007";
+}
+.seven-white-wallet:before {
+	content: "\e008";
+}
+.seven-white-volume_mute:before {
+	content: "\e009";
+}
+.seven-white-volume_medium:before {
+	content: "\e00a";
+}
+.seven-white-volume_low:before {
+	content: "\e00b";
+}
+.seven-white-volume_high:before {
+	content: "\e00c";
+}
+.seven-white-visible:before {
+	content: "\e00d";
+}
+.seven-white-video_cam:before {
+	content: "\e00e";
+}
+.seven-white-user_shield:before {
+	content: "\e00f";
+}
+.seven-white-up-right:before {
+	content: "\e010";
+}
+.seven-white-upload:before {
+	content: "\e011";
+}
+.seven-white-up-left:before {
+	content: "\e012";
+}
+.seven-white-update:before {
+	content: "\e013";
+}
+.seven-white-up:before {
+	content: "\e014";
+}
+.seven-white-unlock:before {
+	content: "\e015";
+}
+.seven-white-umbrella:before {
+	content: "\e016";
+}
+.seven-white-type:before {
+	content: "\e017";
+}
+.seven-white-tv:before {
+	content: "\e018";
+}
+.seven-white-trophy:before {
+	content: "\e019";
+}
+.seven-white-trash2:before {
+	content: "\e01a";
+}
+.seven-white-trash:before {
+	content: "\e01b";
+}
+.seven-white-top:before {
+	content: "\e01c";
+}
+.seven-white-toolbox:before {
+	content: "\e01d";
+}
+.seven-white-tones:before {
+	content: "\e01e";
+}
+.seven-white-today:before {
+	content: "\e01f";
+}
+.seven-white-timer:before {
+	content: "\e020";
+}
+.seven-white-switch:before {
+	content: "\e021";
+}
+.seven-white-student:before {
+	content: "\e022";
+}
+.seven-white-stopwatch:before {
+	content: "\e023";
+}
+.seven-white-star_halffill:before {
+	content: "\e024";
+}
+.seven-white-star_fill:before {
+	content: "\e025";
+}
+.seven-white-star:before {
+	content: "\e026";
+}
+.seven-white-stack:before {
+	content: "\e027";
+}
+.seven-white-square:before {
+	content: "\e028";
+}
+.seven-white-speedometer:before {
+	content: "\e029";
+}
+.seven-white-speech_bubble:before {
+	content: "\e02a";
+}
+.seven-white-shield:before {
+	content: "\e02b";
+}
+.seven-white-shared:before {
+	content: "\e02c";
+}
+.seven-white-setting2:before {
+	content: "\e02d";
+}
+.seven-white-setting:before {
+	content: "\e02e";
+}
+.seven-white-send:before {
+	content: "\e02f";
+}
+.seven-white-sell:before {
+	content: "\e030";
+}
+.seven-white-search:before {
+	content: "\e031";
+}
+.seven-white-scales_of_Balance:before {
+	content: "\e032";
+}
+.seven-white-sale:before {
+	content: "\e033";
+}
+.seven-white-sad:before {
+	content: "\e034";
+}
+.seven-white-running:before {
+	content: "\e035";
+}
+.seven-white-rotation_cw:before {
+	content: "\e036";
+}
+.seven-white-rotation_ccw:before {
+	content: "\e037";
+}
+.seven-white-right:before {
+	content: "\e038";
+}
+.seven-white-restriction_shield:before {
+	content: "\e039";
+}
+.seven-white-resize:before {
+	content: "\e03a";
+}
+.seven-white-repeat:before {
+	content: "\e03b";
+}
+.seven-white-remote_working:before {
+	content: "\e03c";
+}
+.seven-white-reload:before {
+	content: "\e03d";
+}
+.seven-white-refresh_shield:before {
+	content: "\e03e";
+}
+.seven-white-recycling:before {
+	content: "\e03f";
+}
+.seven-white-recycle_sign:before {
+	content: "\e040";
+}
+.seven-white-rack:before {
+	content: "\e041";
+}
+.seven-white-question_shield:before {
+	content: "\e042";
+}
+.seven-white-question:before {
+	content: "\e043";
+}
+.seven-white-puzzle:before {
+	content: "\e044";
+}
+.seven-white-printer:before {
+	content: "\e045";
+}
+.seven-white-price_tag_usd:before {
+	content: "\e046";
+}
+.seven-white-price_tag:before {
+	content: "\e047";
+}
+.seven-white-presentation:before {
+	content: "\e048";
+}
+.seven-white-positive_dynamic:before {
+	content: "\e049";
+}
+.seven-white-plus:before {
+	content: "\e04a";
+}
+.seven-white-plugins:before {
+	content: "\e04b";
+}
+.seven-white-picture:before {
+	content: "\e04c";
+}
+.seven-white-photo:before {
+	content: "\e04d";
+}
+.seven-white-phone_up:before {
+	content: "\e04e";
+}
+.seven-white-phone_down:before {
+	content: "\e04f";
+}
+.seven-white-paper_clip:before {
+	content: "\e050";
+}
+.seven-white-paint_bucket:before {
+	content: "\e051";
+}
+.seven-white-open_in_browser:before {
+	content: "\e052";
+}
+.seven-white-ok:before {
+	content: "\e053";
+}
+.seven-white-no_listen:before {
+	content: "\e054";
+}
+.seven-white-news:before {
+	content: "\e055";
+}
+.seven-white-negative_dynamic:before {
+	content: "\e056";
+}
+.seven-white-negative:before {
+	content: "\e057";
+}
+.seven-white-near_me:before {
+	content: "\e058";
+}
+.seven-white-musical:before {
+	content: "\e059";
+}
+.seven-white-music_record:before {
+	content: "\e05a";
+}
+.seven-white-music:before {
+	content: "\e05b";
+}
+.seven-white-movie:before {
+	content: "\e05c";
+}
+.seven-white-more:before {
+	content: "\e05d";
+}
+.seven-white-money_box:before {
+	content: "\e05e";
+}
+.seven-white-money_bag:before {
+	content: "\e05f";
+}
+.seven-white-money:before {
+	content: "\e060";
+}
+.seven-white-micro:before {
+	content: "\e061";
+}
+.seven-white-message:before {
+	content: "\e062";
+}
+.seven-white-megaphone2:before {
+	content: "\e063";
+}
+.seven-white-megaphone:before {
+	content: "\e064";
+}
+.seven-white-math:before {
+	content: "\e065";
+}
+.seven-white-male_symbol:before {
+	content: "\e066";
+}
+.seven-white-male_stroke:before {
+	content: "\e067";
+}
+.seven-white-male_border_stroke:before {
+	content: "\e068";
+}
+.seven-white-male_border:before {
+	content: "\e069";
+}
+.seven-white-male:before {
+	content: "\e06a";
+}
+.seven-white-lol:before {
+	content: "\e06b";
+}
+.seven-white-lock:before {
+	content: "\e06c";
+}
+.seven-white-literature:before {
+	content: "\e06d";
+}
+.seven-white-listen:before {
+	content: "\e06e";
+}
+.seven-white-link_broken:before {
+	content: "\e06f";
+}
+.seven-white-link:before {
+	content: "\e070";
+}
+.seven-white-line-chart:before {
+	content: "\e071";
+}
+.seven-white-like_haltfill:before {
+	content: "\e072";
+}
+.seven-white-like_fill:before {
+	content: "\e073";
+}
+.seven-white-like:before {
+	content: "\e074";
+}
+.seven-white-left:before {
+	content: "\e075";
+}
+.seven-white-ladder:before {
+	content: "\e076";
+}
+.seven-white-key:before {
+	content: "\e077";
+}
+.seven-white-joystick:before {
+	content: "\e078";
+}
+.seven-white-joker:before {
+	content: "\e079";
+}
+.seven-white-iphone:before {
+	content: "\e07a";
+}
+.seven-white-ipad:before {
+	content: "\e07b";
+}
+.seven-white-invisible:before {
+	content: "\e07c";
+}
+.seven-white-information:before {
+	content: "\e07d";
+}
+.seven-white-inbox:before {
+	content: "\e07e";
+}
+.seven-white-idea:before {
+	content: "\e07f";
+}
+.seven-white-home:before {
+	content: "\e080";
+}
+.seven-white-history:before {
+	content: "\e081";
+}
+.seven-white-help2:before {
+	content: "\e082";
+}
+.seven-white-help:before {
+	content: "\e083";
+}
+.seven-white-headset:before {
+	content: "\e084";
+}
+.seven-white-happy:before {
+	content: "\e085";
+}
+.seven-white-hand:before {
+	content: "\e086";
+}
+.seven-white-group:before {
+	content: "\e087";
+}
+.seven-white-greentech:before {
+	content: "\e088";
+}
+.seven-white-globe:before {
+	content: "\e089";
+}
+.seven-white-glass:before {
+	content: "\e08a";
+}
+.seven-white-gift:before {
+	content: "\e08b";
+}
+.seven-white-gas:before {
+	content: "\e08c";
+}
+.seven-white-forward:before {
+	content: "\e08d";
+}
+.seven-white-folder_opened:before {
+	content: "\e08e";
+}
+.seven-white-folder:before {
+	content: "\e08f";
+}
+.seven-white-flash_light:before {
+	content: "\e090";
+}
+.seven-white-flag:before {
+	content: "\e091";
+}
+.seven-white-finish_flag:before {
+	content: "\e092";
+}
+.seven-white-filter:before {
+	content: "\e093";
+}
+.seven-white-female_symbol:before {
+	content: "\e094";
+}
+.seven-white-female_stroke:before {
+	content: "\e095";
+}
+.seven-white-female_border_stroke:before {
+	content: "\e096";
+}
+.seven-white-female_border:before {
+	content: "\e097";
+}
+.seven-white-female:before {
+	content: "\e098";
+}
+.seven-white-fairytale:before {
+	content: "\e099";
+}
+.seven-white-external_link:before {
+	content: "\e09a";
+}
+.seven-white-expand:before {
+	content: "\e09b";
+}
+.seven-white-engineering:before {
+	content: "\e09c";
+}
+.seven-white-edit:before {
+	content: "\e09d";
+}
+.seven-white-earaser:before {
+	content: "\e09e";
+}
+.seven-white-down-right:before {
+	content: "\e09f";
+}
+.seven-white-download:before {
+	content: "\e0a0";
+}
+.seven-white-down-left:before {
+	content: "\e0a1";
+}
+.seven-white-down_tri:before {
+	content: "\e0a2";
+}
+.seven-white-down:before {
+	content: "\e0a3";
+}
+.seven-white-document:before {
+	content: "\e0a4";
+}
+.seven-white-directions:before {
+	content: "\e0a5";
+}
+.seven-white-dice:before {
+	content: "\e0a6";
+}
+.seven-white-design:before {
+	content: "\e0a7";
+}
+.seven-white-delivery:before {
+	content: "\e0a8";
+}
+.seven-white-delete_shield:before {
+	content: "\e0a9";
+}
+.seven-white-day_view:before {
+	content: "\e0aa";
+}
+.seven-white-date_to:before {
+	content: "\e0ab";
+}
+.seven-white-date_from:before {
+	content: "\e0ac";
+}
+.seven-white-cut:before {
+	content: "\e0ad";
+}
+.seven-white-cross:before {
+	content: "\e0ae";
+}
+.seven-white-credit_card:before {
+	content: "\e0af";
+}
+.seven-white-copy_link:before {
+	content: "\e0b0";
+}
+.seven-white-copy:before {
+	content: "\e0b1";
+}
+.seven-white-contacts:before {
+	content: "\e0b2";
+}
+.seven-white-compas:before {
+	content: "\e0b3";
+}
+.seven-white-combo_chart:before {
+	content: "\e0b4";
+}
+.seven-white-collapse:before {
+	content: "\e0b5";
+}
+.seven-white-code:before {
+	content: "\e0b6";
+}
+.seven-white-clover:before {
+	content: "\e0b7";
+}
+.seven-white-cloud_upload:before {
+	content: "\e0b8";
+}
+.seven-white-cloud_download:before {
+	content: "\e0b9";
+}
+.seven-white-clock:before {
+	content: "\e0ba";
+}
+.seven-white-cash_receiving:before {
+	content: "\e0bb";
+}
+.seven-white-cart_putout:before {
+	content: "\e0bc";
+}
+.seven-white-cart_putin:before {
+	content: "\e0bd";
+}
+.seven-white-cart_loaded:before {
+	content: "\e0be";
+}
+.seven-white-cart_empty:before {
+	content: "\e0bf";
+}
+.seven-white-cart_clear:before {
+	content: "\e0c0";
+}
+.seven-white-card_inuse:before {
+	content: "\e0c1";
+}
+.seven-white-card_inserting:before {
+	content: "\e0c2";
+}
+.seven-white-car_battery:before {
+	content: "\e0c3";
+}
+.seven-white-business:before {
+	content: "\e0c4";
+}
+.seven-white-bug:before {
+	content: "\e0c5";
+}
+.seven-white-briefcase:before {
+	content: "\e0c6";
+}
+.seven-white-brain:before {
+	content: "\e0c7";
+}
+.seven-white-box_filled:before {
+	content: "\e0c8";
+}
+.seven-white-box_empty:before {
+	content: "\e0c9";
+}
+.seven-white-box:before {
+	content: "\e0ca";
+}
+.seven-white-box-2:before {
+	content: "\e0cb";
+}
+.seven-white-bottom:before {
+	content: "\e0cc";
+}
+.seven-white-bookmark:before {
+	content: "\e0cd";
+}
+.seven-white-bluetooth:before {
+	content: "\e0ce";
+}
+.seven-white-basket:before {
+	content: "\e0cf";
+}
+.seven-white-banknotes:before {
+	content: "\e0d0";
+}
+.seven-white-bag:before {
+	content: "\e0d1";
+}
+.seven-white-back:before {
+	content: "\e0d2";
+}
+.seven-white-archive:before {
+	content: "\e0d3";
+}
+.seven-white-alert:before {
+	content: "\e0d4";
+}
+.seven-white-alarm_clock:before {
+	content: "\e0d5";
+}

@@ -61,41 +61,50 @@
         });
 
         //Tabs
-        $('.tab').click(function () {
-            $(this).parent('.tabs').children('.tab').removeClass('active');
-            $(this).parent('.tabs').parent('.tabsbox').children('.bodies').children('.body').removeClass('active');
-            $(this).addClass('active');
+        //$('.tab').click(function () {
+        //    $(this).parent('.tabs').children('.tab').removeClass('active');
+        //    $(this).parent('.tabs').parent('.tabsbox').children('.bodies').children('.body').removeClass('active');
+        //    $(this).addClass('active');
 
 
-            if ($(this).hasClass('tab1')) {
-                $(this).parent('.tabs').parent('.tabsbox').children('.bodies').children('.body1').addClass('active');
-            }
-            else if ($(this).hasClass('tab2')) {
-                $(this).parent('.tabs').parent('.tabsbox').children('.bodies').children('.body2').addClass('active');
-            }
-            else if ($(this).hasClass('tab3')) {
-                $(this).parent('.tabs').parent('.tabsbox').children('.bodies').children('.body3').addClass('active');
-            }
-            else if ($(this).hasClass('tab4')) {
-                $(this).parent('.tabs').parent('.tabsbox').children('.bodies').children('.body4').addClass('active');
-            }
-            else if ($(this).hasClass('tab5')) {
-                $(this).parent('.tabs').parent('.tabsbox').children('.bodies').children('.body5').addClass('active');
-            }
-            else if ($(this).hasClass('tab6')) {
-                $(this).parent('.tabs').parent('.tabsbox').children('.bodies').children('.body6').addClass('active');
-            }
-            else if ($(this).hasClass('tab7')) {
-                $(this).parent('.tabs').parent('.tabsbox').children('.bodies').children('.body7').addClass('active');
-            }
-            else if ($(this).hasClass('tab8')) {
-                $(this).parent('.tabs').parent('.tabsbox').children('.bodies').children('.body8').addClass('active');
-            }
-            else if ($(this).hasClass('tab9')) {
-                $(this).parent('.tabs').parent('.tabsbox').children('.bodies').children('.body9').addClass('active');
-            }
-            else if ($(this).hasClass('tab10')) {
-                $(this).parent('.tabs').parent('.tabsbox').children('.bodies').children('.body10').addClass('active');
+        //    if ($(this).hasClass('tab1')) {
+        //        $(this).parent('.tabs').parent('.tabsbox').children('.bodies').children('.body1').addClass('active');
+        //    }
+        //    else if ($(this).hasClass('tab2')) {
+        //        $(this).parent('.tabs').parent('.tabsbox').children('.bodies').children('.body2').addClass('active');
+        //    }
+        //    else if ($(this).hasClass('tab3')) {
+        //        $(this).parent('.tabs').parent('.tabsbox').children('.bodies').children('.body3').addClass('active');
+        //    }
+        //    else if ($(this).hasClass('tab4')) {
+        //        $(this).parent('.tabs').parent('.tabsbox').children('.bodies').children('.body4').addClass('active');
+        //    }
+        //    else if ($(this).hasClass('tab5')) {
+        //        $(this).parent('.tabs').parent('.tabsbox').children('.bodies').children('.body5').addClass('active');
+        //    }
+        //    else if ($(this).hasClass('tab6')) {
+        //        $(this).parent('.tabs').parent('.tabsbox').children('.bodies').children('.body6').addClass('active');
+        //    }
+        //    else if ($(this).hasClass('tab7')) {
+        //        $(this).parent('.tabs').parent('.tabsbox').children('.bodies').children('.body7').addClass('active');
+        //    }
+        //    else if ($(this).hasClass('tab8')) {
+        //        $(this).parent('.tabs').parent('.tabsbox').children('.bodies').children('.body8').addClass('active');
+        //    }
+        //    else if ($(this).hasClass('tab9')) {
+        //        $(this).parent('.tabs').parent('.tabsbox').children('.bodies').children('.body9').addClass('active');
+        //    }
+        //    else if ($(this).hasClass('tab10')) {
+        //        $(this).parent('.tabs').parent('.tabsbox').children('.bodies').children('.body10').addClass('active');
+        //    }
+        //});
+        $('.tabs > ul.controls').children('li').click(function () {
+            var thisTab = $(this).parent('ul.controls').parent('.tabs');
+            if (!$(this).hasClass('active')) {
+                thisTab.children('ul.controls').children('li').removeClass('active');
+                thisTab.children('ul.panes').children('li').removeClass('active');
+                $(this).addClass('active');
+                thisTab.children('ul.panes').children('li:eq(' + $(this).index() + ')').addClass('active');
             }
         });
 
